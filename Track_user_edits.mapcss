@@ -1,0 +1,66 @@
+meta {
+  title: "watch you edits";
+  description: "Highlight the edits done by active users in the area";
+  watch-modified: true;
+  version: "1.0";
+  author: Rocky_rockz;
+}
+
+setting::rocky_Rockz{
+	type:boolean;
+	label: tr("rocky_Rockz");
+	default:false;
+}
+
+
+node:modified::modified_layer 
+{
+
+    symbol-shape: circle;
+    symbol-size: 12;
+    symbol-stroke-color: yellow;
+    symbol-fill-color: yellow;
+    symbol-fill-opacity: 0.6;
+    z-index: 8;
+}
+
+*[eval(JOSM_search("user:rocky_Rockz"))] {
+  set .rocky_Rockz_style;
+}
+
+way[highway] > node.rocky_Rockz_style[setting("rocky_Rockz")]
+
+
+{
+  symbol-size:8;
+  symbol-shape: circle;
+  symbol-stroke-color: yellow;
+  symbol-fill-color: yellow;
+
+}
+
+
+node:connection, node:tagged.rocky_Rockz_style[setting("rocky_Rockz")],
+
+{
+  symbol-shape: circle;
+  symbol-size:10;
+  symbol-fill-color: #36ebf0;
+  symbol-stroke-color: #36ebf0;
+  symbol-stroke-width: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
