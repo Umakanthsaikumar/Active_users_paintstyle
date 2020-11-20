@@ -255,8 +255,7 @@ node:connection.IgorEliezer_style[setting("IgorEliezer")],
 node:connection.DressyPear4_style[setting("DressyPear4")],
 node:connection.Kaartense_style[setting("Kaartense")],
 node:connection.Tomio_style[setting("Tomio")],
-node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
-
+node:connection.Lars_TheViking_style[setting("Lars_TheViking")]
 {
   symbol-size: 9;
   symbol-shape: circle;	
@@ -281,9 +280,7 @@ way[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
 way[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
 way[bridge!=yes].Kaartense_style[setting("Kaartense")],
 way[bridge!=yes].Tomio_style[setting("Tomio")],
-way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
-
-
+way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")]
 {
   casing-color: red;
   casing-opacity:0.5;
