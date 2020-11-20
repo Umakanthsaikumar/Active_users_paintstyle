@@ -1,66 +1,296 @@
 meta {
-  title: "watch you edits";
-  description: "Highlight the edits done by active users in the area";
-  watch-modified: true;
-  version: "1.0";
-  author: Rocky_rockz;
+	title: "Active Users Paintstyle";
+	description: "This map paint style was created to higlight Active user edits"
 }
 
-setting::rocky_Rockz{
-	type:boolean;
-	label: tr("rocky_Rockz");
-	default:false;
+
+settings::brazil {
+	label: tr("1. Brazil")
+}
+
+
+settings::Philippines {
+	label: tr("2. Philippines")
+}
+
+
+settings::mexico {
+	label: tr("3. Mexico")
+}
+
+
+/* -- User List------- */
+
+
+setting::erickdeoliveiraleal{
+	type: boolean;
+	label: tr("erickdeoliveiraleal");
+	default: true;
+	group: "brazil";
+}
+
+
+setting::gscholz{
+	type: boolean;
+	label: tr("gscholz");
+	default: true;
+	group: "brazil";
+}
+
+setting::AjBelnuovo{
+	type: boolean;
+	label: tr("AjBelnuovo");
+	default: true;
+	group: "brazil";
+}
+
+setting::IgorEliezer{
+	type: boolean;
+	label: tr("IgorEliezer");
+	default: true;
+	group: "brazil";
+}
+
+setting::DressyPear4{
+	type: boolean;
+	label: tr("DressyPear4");
+	default: true;
+	group: "brazil";
+}
+
+setting::Kaartense{
+	type: boolean;
+	label: tr("Kaartense");
+	default: true;
+	group: "brazil";
+}
+
+setting::Tomio{
+	type: boolean;
+	label: tr("Tomio");
+	default: true;
+	group: "brazil";
+}
+
+setting::Lars_TheViking{
+	type: boolean;
+	label: tr("Lars_TheViking");
+	default: true;
+	group: "brazil";
+}
+
+
+setting::Gowin{
+	type: boolean;
+	label: tr("Gowin");
+	default: true;
+	group: "Philippines";
+}
+
+setting::maning{
+	type: boolean;
+	label: tr("maning");
+	default: true;
+	group: "Philippines";
+}
+
+setting::Rally{
+	type: boolean;
+	label: tr("Rally");
+	default: true;
+	group: "Philippines";
+}
+
+setting::TagaSanPedroAko{
+	type: boolean;
+	label: tr("TagaSanPedroAko");
+	default: true;
+	group: "Philippines";
+}
+
+setting::VMPanes{
+	type: boolean;
+	label: tr("VMPanes");
+	default: true;
+	group: "Philippines";
+}
+
+setting::caspermonte{
+	type: boolean;
+	label: tr("caspermonte");
+	default: true;
+	group: "Philippines";
+}
+
+
+setting::DP24PH{
+	type: boolean;
+	label: tr("DP24PH");
+	default: true;
+	group: "Philippines";
+}
+
+setting::Timmy_Tesseract{
+	type: boolean;
+	label: tr("Timmy_Tesseract");
+	default: true;
+	group: "Philippines";
 }
 
 
 node:modified::modified_layer 
 {
-
     symbol-shape: circle;
-    symbol-size: 12;
-    symbol-stroke-color: yellow;
+    symbol-size: 14;
+    symbol-stroke-color: blue;
     symbol-fill-color: yellow;
-    symbol-fill-opacity: 0.6;
-    z-index: 8;
+    symbol-fill-opacity: 0.5;
+    z-index: 5;
 }
 
-*[eval(JOSM_search("user:rocky_Rockz"))] {
-  set .rocky_Rockz_style;
+
+
+*[eval(JOSM_search("user:erickdeoliveiraleal"))] {
+  set .erickdeoliveiraleal_style;
 }
 
-way[highway] > node.rocky_Rockz_style[setting("rocky_Rockz")]
+*[eval(JOSM_search("user:Timmy_Tesseract"))] {
+  set .Timmy_Tesseract_style;
+}
+
+*[eval(JOSM_search("user:Gowin"))] {
+  set .Gowin_style;
+}
+
+*[eval(JOSM_search("user:maning"))] {
+  set .maning_style;
+}
+
+*[eval(JOSM_search("user:Rally"))] {
+  set .Rally_style;
+}
+
+*[eval(JOSM_search("user:TagaSanPedroAko"))] {
+  set .TagaSanPedroAko_style;
+}
+
+*[eval(JOSM_search("user:VMPanes"))] {
+  set .VMPanes_style;
+}
+
+*[eval(JOSM_search("user:caspermonte"))] {
+  set .caspermonte_style;
+}
+
+*[eval(JOSM_search("user:DP24PH"))] {
+  set .DP24PH_style;
+}	
+
+*[eval(JOSM_search("user:gscholz"))] {
+  set .gscholz_style;
+}
+
+*[eval(JOSM_search("user:AjBelnuovo"))] {
+  set .AjBelnuovo_style;
+}
+
+*[eval(JOSM_search("user:IgorEliezer"))] {
+  set .IgorEliezer_style;
+}
+
+*[eval(JOSM_search("user:DressyPear4"))] {
+  set .DressyPear4_style;
+}
+
+*[eval(JOSM_search("user:Kaartense"))] {
+  set .Kaartense_style;
+}
+
+*[eval(JOSM_search("user:Tomio"))] {
+  set .Tomio_style;
+}
+
+*[eval(JOSM_search("user:Lars_TheViking"))] {
+  set .Lars_TheViking_style;
+}
+
+
+node!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node!:connection.Gowin_style[setting("Gowin")],
+node!:connection.maning_style[setting("maning")],
+node!:connection.Rally_style[setting("Rally")],
+node!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node!:connection.VMPanes_style[setting("VMPanes")],
+node!:connection.caspermonte_style[setting("caspermonte")],
+node!:connection.DP24PH_style[setting("DP24PH")],
+node!:connection.gscholz_style[setting("gscholz")],
+node!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node!:connection.IgorEliezer_style[setting("IgorEliezer")],
+node!:connection.DressyPear4_style[setting("DressyPear4")],
+node!:connection.Kaartense_style[setting("Kaartense")],
+node!:connection.Tomio_style[setting("Tomio")],
+node!:connection.Lars_TheViking_style[setting("Lars_TheViking")]
 
 
 {
-  symbol-size:8;
-  symbol-shape: circle;
+  symbol-size: 7;
+  symbol-shape: square;	
+  symbol-stroke-color: red;
+  symbol-stroke-width: 1;
+  symbol-fill-color:  yellow;
+  symbol-fill-opacity: 0.7;
+  z-index: 5; 
+}
+
+
+node:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node:connection.Gowin_style[setting("Gowin")],
+node:connection.maning_style[setting("maning")],
+node:connection.Rally_style[setting("Rally")],
+node:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node:connection.VMPanes_style[setting("VMPanes")],
+node:connection.caspermonte_style[setting("caspermonte")],
+node:connection.DP24PH_style[setting("DP24PH")],
+node:connection.gscholz_style[setting("gscholz")],
+node:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node:connection.IgorEliezer_style[setting("IgorEliezer")],
+node:connection.DressyPear4_style[setting("DressyPear4")],
+node:connection.Kaartense_style[setting("Kaartense")],
+node:connection.Tomio_style[setting("Tomio")],
+node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+
+{
+  symbol-size: 9;
+  symbol-shape: circle;	
   symbol-stroke-color: yellow;
-  symbol-fill-color: yellow;
-
+  symbol-stroke-width: 1;
+  symbol-fill-color: red;
+  z-index: 5; 
 }
 
+way[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+way[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+way[bridge!=yes].Gowin_style[setting("Gowin")],
+way[bridge!=yes].maning_style[setting("maning")],
+way[bridge!=yes].Rally_style[setting("Rally")],
+way[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+way[bridge!=yes].VMPanes_style[setting("VMPanes")],
+way[bridge!=yes].caspermonte_style[setting("caspermonte")],
+way[bridge!=yes].DP24PH_style[setting("DP24PH")],
+way[bridge!=yes].gscholz_style[setting("gscholz")],
+way[bridge!=yes].AjBelnuovo_style[setting("AjBelnuovo")],
+way[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
+way[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
+way[bridge!=yes].Kaartense_style[setting("Kaartense")],
+way[bridge!=yes].Tomio_style[setting("Tomio")],
+way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
 
-node:connection, node:tagged.rocky_Rockz_style[setting("rocky_Rockz")],
 
 {
-  symbol-shape: circle;
-  symbol-size:10;
-  symbol-fill-color: #36ebf0;
-  symbol-stroke-color: #36ebf0;
-  symbol-stroke-width: 1.2;
+  casing-color: red;
+  casing-opacity:0.5;
+  casing-width:4;
+  casing-linecap:12;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
