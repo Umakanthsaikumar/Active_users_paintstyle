@@ -9,15 +9,15 @@ meta {
 /* -- Countries List------- */
 
 settings::brazil {
-	label: tr("1. Brazil")
+	label: tr("1. Brazil");
 }
 
 settings::Philippines {
-	label: tr("2. Philippines")
+	label: tr("2. Philippines");
 }
 
 settings::mexico {
-	label: tr("3. Mexico")
+	label: tr("3. Mexico");
 }
 
 /* -- User setting List------- */
