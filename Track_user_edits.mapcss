@@ -1,6 +1,6 @@
 meta {
   	title: "Active Users Paintstyle";
-  	description: "This map paint style was created to higlight Active user edits";
+  	description: "This map paint style was created to higlight Active user edits"
 }
 
 
@@ -143,8 +143,6 @@ node:modified::modified_layer
     symbol-fill-opacity: 0.5;
     z-index: 5;
 }
-
-
 
 *[eval(JOSM_search("user:erickdeoliveiraleal"))] {
   set .erickdeoliveiraleal_style;
