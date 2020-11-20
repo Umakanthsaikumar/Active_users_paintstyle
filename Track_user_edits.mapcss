@@ -1,19 +1,15 @@
 meta {
-	title: "Active Users Paintstyle";
-	description: "This map paint style was created to higlight Active user edits"
+  title: "Active Users Paintstyle";
+  description: "This map paint style was created to higlight Active user edits"
 }
 
 
 settings::brazil {
 	label: tr("1. Brazil")
 }
-
-
 settings::Philippines {
 	label: tr("2. Philippines")
 }
-
-
 settings::mexico {
 	label: tr("3. Mexico")
 }
