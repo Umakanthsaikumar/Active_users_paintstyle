@@ -1,22 +1,26 @@
 meta {
-  	title: "Active Users Paintstyle";
-  	description: "This map paint style was created to higlight Active user edits"
+	title: "Active Users Paintstyle";
+	description: "This map paint style was created to higlight active users edits"
 }
 
+
+
+
+/* -- Countries List------- */
 
 settings::brazil {
 	label: tr("1. Brazil")
 }
+
 settings::Philippines {
 	label: tr("2. Philippines")
 }
+
 settings::mexico {
 	label: tr("3. Mexico")
 }
 
-
-/* -- User List------- */
-
+/* -- User setting List------- */
 
 setting::erickdeoliveiraleal{
 	type: boolean;
@@ -144,70 +148,73 @@ node:modified::modified_layer
     z-index: 5;
 }
 
+
 *[eval(JOSM_search("user:erickdeoliveiraleal"))] {
-  set .erickdeoliveiraleal_style;
+  	set .erickdeoliveiraleal_style;
 }
 
 *[eval(JOSM_search("user:Timmy_Tesseract"))] {
-  set .Timmy_Tesseract_style;
+  	set .Timmy_Tesseract_style;
 }
 
 *[eval(JOSM_search("user:Gowin"))] {
-  set .Gowin_style;
+  	set .Gowin_style;
 }
 
 *[eval(JOSM_search("user:maning"))] {
-  set .maning_style;
+  	set .maning_style;
 }
 
 *[eval(JOSM_search("user:Rally"))] {
-  set .Rally_style;
+  	set .Rally_style;
 }
 
 *[eval(JOSM_search("user:TagaSanPedroAko"))] {
-  set .TagaSanPedroAko_style;
+  	set .TagaSanPedroAko_style;
 }
 
 *[eval(JOSM_search("user:VMPanes"))] {
-  set .VMPanes_style;
+  	set .VMPanes_style;
 }
 
 *[eval(JOSM_search("user:caspermonte"))] {
-  set .caspermonte_style;
+	set .caspermonte_style;
 }
 
 *[eval(JOSM_search("user:DP24PH"))] {
-  set .DP24PH_style;
+  	set .DP24PH_style;
 }	
 
 *[eval(JOSM_search("user:gscholz"))] {
-  set .gscholz_style;
+ 	set .gscholz_style;
 }
 
 *[eval(JOSM_search("user:AjBelnuovo"))] {
-  set .AjBelnuovo_style;
+	set .AjBelnuovo_style;
 }
 
 *[eval(JOSM_search("user:IgorEliezer"))] {
-  set .IgorEliezer_style;
+  	set .IgorEliezer_style;
 }
 
 *[eval(JOSM_search("user:DressyPear4"))] {
-  set .DressyPear4_style;
+  	set .DressyPear4_style;
 }
 
 *[eval(JOSM_search("user:Kaartense"))] {
-  set .Kaartense_style;
+  	set .Kaartense_style;
 }
 
 *[eval(JOSM_search("user:Tomio"))] {
-  set .Tomio_style;
+  	set .Tomio_style;
 }
 
 *[eval(JOSM_search("user:Lars_TheViking"))] {
-  set .Lars_TheViking_style;
+  	set .Lars_TheViking_style;
 }
 
+
+/* -- User edits on node node styling------- */
 
 node!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 node!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
@@ -224,19 +231,18 @@ node!:connection.IgorEliezer_style[setting("IgorEliezer")],
 node!:connection.DressyPear4_style[setting("DressyPear4")],
 node!:connection.Kaartense_style[setting("Kaartense")],
 node!:connection.Tomio_style[setting("Tomio")],
-node!:connection.Lars_TheViking_style[setting("Lars_TheViking")]
+node!:connection.Lars_TheViking_style[setting("Lars_TheViking")] {
 
-
-{
-  symbol-size: 7;
-  symbol-shape: square;	
-  symbol-stroke-color: red;
-  symbol-stroke-width: 1;
-  symbol-fill-color:  yellow;
-  symbol-fill-opacity: 0.7;
-  z-index: 5; 
+  	symbol-size: 7;
+  	symbol-shape: square;	
+	symbol-stroke-color: red;
+	symbol-stroke-width: 1;
+	symbol-fill-color:  yellow;
+	symbol-fill-opacity: 0.7;
+	z-index: 5; 
 }
 
+/* -- User edits on junction node styling ------- */
 
 node:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
 node:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
@@ -253,15 +259,18 @@ node:connection.IgorEliezer_style[setting("IgorEliezer")],
 node:connection.DressyPear4_style[setting("DressyPear4")],
 node:connection.Kaartense_style[setting("Kaartense")],
 node:connection.Tomio_style[setting("Tomio")],
-node:connection.Lars_TheViking_style[setting("Lars_TheViking")]
-{
-  symbol-size: 9;
-  symbol-shape: circle;	
-  symbol-stroke-color: yellow;
-  symbol-stroke-width: 1;
-  symbol-fill-color: red;
-  z-index: 5; 
+node:connection.Lars_TheViking_style[setting("Lars_TheViking")] {
+  	
+  	symbol-size: 9;
+  	symbol-shape: circle;	
+  	symbol-stroke-color: yellow;
+  	symbol-stroke-width: 1;
+  	symbol-fill-color: red;
+  	z-index: 5; 
 }
+
+
+/* -- User edits on way styling ------- */
 
 way[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 way[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
@@ -278,10 +287,12 @@ way[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
 way[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
 way[bridge!=yes].Kaartense_style[setting("Kaartense")],
 way[bridge!=yes].Tomio_style[setting("Tomio")],
-way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")]
-{
-  casing-color: red;
-  casing-opacity:0.5;
-  casing-width:4;
-  casing-linecap:12;
+way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")] {
+
+	casing-color: red;
+  	casing-opacity:0.5;
+  	casing-width:4;
+  	casing-linecap:12;
+
 }
+ 
