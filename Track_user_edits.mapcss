@@ -157,6 +157,26 @@ setting::AlwaysSunnyInMapadelphia{
 	group: "Mexico";
 }
 
+setting::Diegzzz18{
+	type: boolean;
+	label: tr("Diegzzz18");
+	default: true;
+	group: "Mexico";
+}
+
+setting::semorphy{
+	type: boolean;
+	label: tr("semorphy");
+	default: true;
+	group: "Mexico";
+}
+
+setting::birdeatscake{
+	type: boolean;
+	label: tr("birdeatscake");
+	default: true;
+	group: "Mexico";
+}
 
 node:modified::modified_layer 
 {
@@ -167,7 +187,6 @@ node:modified::modified_layer
     symbol-fill-opacity: 0.5;
     z-index: 5;
 }
-
 
 *[eval(JOSM_search("user:erickdeoliveiraleal"))] {
   	set .erickdeoliveiraleal_style;
@@ -245,8 +264,17 @@ node:modified::modified_layer
   	set .AlwaysSunnyInMapadelphia_style;
 }
 
+*[eval(JOSM_search("user:Diegzzz18"))] {
+  	set .Diegzzz18_style;
+}
 
+*[eval(JOSM_search("user:semorphy"))] {
+  	set .semorphy_style;
+}
 
+*[eval(JOSM_search("user:birdeatscake"))] {
+  	set .birdeatscake_style;
+}
 
 /* -- User edits on node node styling------- */
 
@@ -268,7 +296,10 @@ node!:connection.Tomio_style[setting("Tomio")],
 node!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
 node!:connection.Basstoelpel_style[setting("Basstoelpel")],
 node!:connection.Andrew_Matheny_style[setting("Andrew_Matheny")],
-node!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
+node!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node!:connection.Diegzzz18_style[setting("Diegzzz18")],
+node!:connection.semorphy_style[setting("semorphy")],
+node!:connection.birdeatscake_style[setting("birdeatscake")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -299,7 +330,10 @@ node:connection.Tomio_style[setting("Tomio")],
 node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
 node:connection.Basstoelpel_style[setting("Basstoelpel")],
 node:connection.Andrew_Matheny_style[setting("Andrew_Matheny")],
-node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
+node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node:connection.Diegzzz18_style[setting("Diegzzz18")],
+node:connection.semorphy_style[setting("semorphy")],
+node:connection.birdeatscake_style[setting("birdeatscake")]
 {
   	
   	symbol-size: 9;
@@ -331,7 +365,10 @@ way[bridge!=yes].Tomio_style[setting("Tomio")],
 way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
 way[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
 way[bridge!=yes].Andrew_Matheny_style[setting("Andrew Matheny")],
-way[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
+way[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+way[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
+way[bridge!=yes].semorphy_style[setting("semorphy")],
+way[bridge!=yes].birdeatscake_style[setting("birdeatscake")]
 {
 
 	casing-color: red;
