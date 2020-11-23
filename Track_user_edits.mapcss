@@ -143,13 +143,6 @@ setting::Basstoelpel{
 	group: "Mexico";
 }
 
-setting::Andrew_Matheny{
-	type: boolean;
-	label: tr("Andrew Matheny");
-	default: true;
-	group: "Mexico";
-}
-
 setting::AlwaysSunnyInMapadelphia{
 	type: boolean;
 	label: tr("AlwaysSunnyInMapadelphia");
@@ -256,10 +249,6 @@ node:modified::modified_layer
   	set .Basstoelpel_style;
 }
 
-*[eval(JOSM_search("user:Andrew_Matheny"))] {
-  	set .Andrew_Matheny_style;
-}
-
 *[eval(JOSM_search("user:AlwaysSunnyInMapadelphia"))] {
   	set .AlwaysSunnyInMapadelphia_style;
 }
@@ -295,7 +284,6 @@ node!:connection.Kaartense_style[setting("Kaartense")],
 node!:connection.Tomio_style[setting("Tomio")],
 node!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
 node!:connection.Basstoelpel_style[setting("Basstoelpel")],
-node!:connection.Andrew_Matheny_style[setting("Andrew_Matheny")],
 node!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
 node!:connection.Diegzzz18_style[setting("Diegzzz18")],
 node!:connection.semorphy_style[setting("semorphy")],
@@ -329,7 +317,6 @@ node:connection.Kaartense_style[setting("Kaartense")],
 node:connection.Tomio_style[setting("Tomio")],
 node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
 node:connection.Basstoelpel_style[setting("Basstoelpel")],
-node:connection.Andrew_Matheny_style[setting("Andrew_Matheny")],
 node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
 node:connection.Diegzzz18_style[setting("Diegzzz18")],
 node:connection.semorphy_style[setting("semorphy")],
@@ -364,7 +351,6 @@ way[bridge!=yes].Kaartense_style[setting("Kaartense")],
 way[bridge!=yes].Tomio_style[setting("Tomio")],
 way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
 way[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
-way[bridge!=yes].Andrew_Matheny_style[setting("Andrew Matheny")],
 way[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
 way[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
 way[bridge!=yes].semorphy_style[setting("semorphy")],
