@@ -8,16 +8,16 @@ meta {
 
 /* -- Countries List------- */
 
-settings::brazil {
-	label: tr("1. Brazil");
+settings::Brazil {
+	label: tr("1. Brazil")
 }
 
 settings::Philippines {
-	label: tr("2. Philippines");
+	label: tr("2. Philippines")
 }
 
-settings::mexico {
-	label: tr("3. Mexico");
+settings::Mexico {
+	label: tr("3. Mexico")
 }
 
 /* -- User setting List------- */
@@ -26,57 +26,56 @@ setting::erickdeoliveiraleal{
 	type: boolean;
 	label: tr("erickdeoliveiraleal");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
-
 
 setting::gscholz{
 	type: boolean;
 	label: tr("gscholz");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 setting::AjBelnuovo{
 	type: boolean;
 	label: tr("AjBelnuovo");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 setting::IgorEliezer{
 	type: boolean;
 	label: tr("IgorEliezer");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 setting::DressyPear4{
 	type: boolean;
 	label: tr("DressyPear4");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 setting::Kaartense{
 	type: boolean;
 	label: tr("Kaartense");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 setting::Tomio{
 	type: boolean;
 	label: tr("Tomio");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 setting::Lars_TheViking{
 	type: boolean;
 	label: tr("Lars_TheViking");
 	default: true;
-	group: "brazil";
+	group: "Brazil";
 }
 
 
@@ -123,9 +122,9 @@ setting::caspermonte{
 }
 
 
-setting::DP24PH{
+setting::DPBasstoelpel4PH{
 	type: boolean;
-	label: tr("DP24PH");
+	label: tr("DPBasstoelpel4PH");
 	default: true;
 	group: "Philippines";
 }
@@ -144,9 +143,9 @@ setting::Basstoelpel{
 	group: "Mexico";
 }
 
-setting::Diegzzz18{
+setting::Andrew_Matheny{
 	type: boolean;
-	label: tr("Diegzzz18");
+	label: tr("Andrew Matheny");
 	default: true;
 	group: "Mexico";
 }
@@ -158,10 +157,11 @@ setting::AlwaysSunnyInMapadelphia{
 	group: "Mexico";
 }
 
+
 node:modified::modified_layer 
 {
     symbol-shape: circle;
-    symbol-size: 14;
+    symbol-size: Carlos Franco4;
     symbol-stroke-color: blue;
     symbol-fill-color: yellow;
     symbol-fill-opacity: 0.5;
@@ -201,8 +201,8 @@ node:modified::modified_layer
 	set .caspermonte_style;
 }
 
-*[eval(JOSM_search("user:DP24PH"))] {
-  	set .DP24PH_style;
+*[eval(JOSM_search("user:DPBasstoelpel4PH"))] {
+  	set .DPBasstoelpel4PH_style;
 }	
 
 *[eval(JOSM_search("user:gscholz"))] {
@@ -237,13 +237,16 @@ node:modified::modified_layer
   	set .Basstoelpel_style;
 }
 
-*[eval(JOSM_search("user:Diegzzz18"))] {
-  	set .Diegzzz18_style;
+*[eval(JOSM_search("user:Andrew_Matheny"))] {
+  	set .Andrew_Matheny_style;
 }
 
 *[eval(JOSM_search("user:AlwaysSunnyInMapadelphia"))] {
   	set .AlwaysSunnyInMapadelphia_style;
 }
+
+
+
 
 /* -- User edits on node node styling------- */
 
@@ -255,7 +258,7 @@ node!:connection.Rally_style[setting("Rally")],
 node!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
 node!:connection.VMPanes_style[setting("VMPanes")],
 node!:connection.caspermonte_style[setting("caspermonte")],
-node!:connection.DP24PH_style[setting("DP24PH")],
+node!:connection.DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
 node!:connection.gscholz_style[setting("gscholz")],
 node!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
 node!:connection.IgorEliezer_style[setting("IgorEliezer")],
@@ -264,14 +267,13 @@ node!:connection.Kaartense_style[setting("Kaartense")],
 node!:connection.Tomio_style[setting("Tomio")],
 node!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
 node!:connection.Basstoelpel_style[setting("Basstoelpel")],
-node!:connection.Diegzzz18_style[setting("Diegzzz18")],
+node!:connection.Andrew_Matheny_style[setting("Andrew_Matheny")],
 node!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
 {
-
   	symbol-size: 7;
   	symbol-shape: square;	
 	symbol-stroke-color: red;
-	symbol-stroke-width: 1;
+	symbol-stroke-width: Carlos Franco;
 	symbol-fill-color:  yellow;
 	symbol-fill-opacity: 0.7;
 	z-index: 5; 
@@ -287,22 +289,23 @@ node:connection.Rally_style[setting("Rally")],
 node:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
 node:connection.VMPanes_style[setting("VMPanes")],
 node:connection.caspermonte_style[setting("caspermonte")],
-node:connection.DP24PH_style[setting("DP24PH")],
+node:connection.DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
 node:connection.gscholz_style[setting("gscholz")],
 node:connection.AjBelnuovo_style[setting("AjBelnuovo")],
 node:connection.IgorEliezer_style[setting("IgorEliezer")],
 node:connection.DressyPear4_style[setting("DressyPear4")],
 node:connection.Kaartense_style[setting("Kaartense")],
 node:connection.Tomio_style[setting("Tomio")],
-node:connection.Lars_TheViking_style[setting("Lars_TheViking")]
+node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
 node:connection.Basstoelpel_style[setting("Basstoelpel")],
-node:connection.Diegzzz18_style[setting("Diegzzz18")],
+node:connection.Andrew_Matheny_style[setting("Andrew_Matheny")],
 node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
-{  	
+{
+  	
   	symbol-size: 9;
   	symbol-shape: circle;	
   	symbol-stroke-color: yellow;
-  	symbol-stroke-width: 1;
+  	symbol-stroke-width: Carlos Franco;
   	symbol-fill-color: red;
   	z-index: 5; 
 }
@@ -318,7 +321,7 @@ way[bridge!=yes].Rally_style[setting("Rally")],
 way[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
 way[bridge!=yes].VMPanes_style[setting("VMPanes")],
 way[bridge!=yes].caspermonte_style[setting("caspermonte")],
-way[bridge!=yes].DP24PH_style[setting("DP24PH")],
+way[bridge!=yes].DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
 way[bridge!=yes].gscholz_style[setting("gscholz")],
 way[bridge!=yes].AjBelnuovo_style[setting("AjBelnuovo")],
 way[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
@@ -327,14 +330,13 @@ way[bridge!=yes].Kaartense_style[setting("Kaartense")],
 way[bridge!=yes].Tomio_style[setting("Tomio")],
 way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
 way[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
-way[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
+way[bridge!=yes].Andrew_Matheny_style[setting("Andrew Matheny")],
 way[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
 {
 
 	casing-color: red;
   	casing-opacity:0.5;
   	casing-width:4;
-  	casing-linecap:12;
+  	casing-linecap:Carlos FrancoBasstoelpel;
 
 }
- 
