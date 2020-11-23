@@ -137,20 +137,6 @@ setting::Timmy_Tesseract{
 	group: "Philippines";
 }
 
-setting::1T-money{
-	type: boolean;
-	label: tr("1T-money");
-	default: true;
-	group: "Mexico";
-}
-
-setting::Carlos Franco{
-	type: boolean;
-	label: tr("Carlos Franco");
-	default: true;
-	group: "Mexico";
-}
-
 setting::Basstoelpel{
 	type: boolean;
 	label: tr("Basstoelpel");
@@ -158,9 +144,9 @@ setting::Basstoelpel{
 	group: "Mexico";
 }
 
-setting::Andrew Matheny{
+setting::Diegzzz18{
 	type: boolean;
-	label: tr("Andrew Matheny");
+	label: tr("Diegzzz18");
 	default: true;
 	group: "Mexico";
 }
@@ -247,20 +233,12 @@ node:modified::modified_layer
   	set .Lars_TheViking_style;
 }
 
-*[eval(JOSM_search("user:1T-money"))] {
-  	set .1T-money_style;
-}
-
-*[eval(JOSM_search("user:Carlos Franco"))] {
-  	set .Carlos Franco_style;
-}
-
 *[eval(JOSM_search("user:Basstoelpel"))] {
   	set .Basstoelpel_style;
 }
 
-*[eval(JOSM_search("user:Andrew Matheny"))] {
-  	set .Andrew Matheny_style;
+*[eval(JOSM_search("user:Diegzzz18"))] {
+  	set .Diegzzz18_style;
 }
 
 *[eval(JOSM_search("user:AlwaysSunnyInMapadelphia"))] {
@@ -285,10 +263,8 @@ node!:connection.DressyPear4_style[setting("DressyPear4")],
 node!:connection.Kaartense_style[setting("Kaartense")],
 node!:connection.Tomio_style[setting("Tomio")],
 node!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
-node!:connection.1T-money_style[setting("1T-money")],
-node!:connection.Carlos Franco_style[setting("Carlos Franco")],
 node!:connection.Basstoelpel_style[setting("Basstoelpel")],
-node!:connection.Andrew Matheny_style[setting("Andrew Matheny")],
+node!:connection.Diegzzz18_style[setting("Diegzzz18")],
 node!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
 {
 
@@ -319,10 +295,8 @@ node:connection.DressyPear4_style[setting("DressyPear4")],
 node:connection.Kaartense_style[setting("Kaartense")],
 node:connection.Tomio_style[setting("Tomio")],
 node:connection.Lars_TheViking_style[setting("Lars_TheViking")]
-node:connection.1T-money_style[setting("1T-money")], 
-node:connection.Carlos Franco_style[setting("Carlos Franco")],
 node:connection.Basstoelpel_style[setting("Basstoelpel")],
-node:connection.Andrew Matheny_style[setting("Andrew Matheny")],
+node:connection.Diegzzz18_style[setting("Diegzzz18")],
 node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
 {  	
   	symbol-size: 9;
@@ -352,10 +326,8 @@ way[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
 way[bridge!=yes].Kaartense_style[setting("Kaartense")],
 way[bridge!=yes].Tomio_style[setting("Tomio")],
 way[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
-way[bridge!=yes].1T-money_style[setting("1T-money")],
-way[bridge!=yes].Carlos Franco_style[setting("Carlos Franco")],
 way[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
-way[bridge!=yes].Andrew Matheny_style[setting("Andrew Matheny")],
+way[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
 way[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")]
 {
 
