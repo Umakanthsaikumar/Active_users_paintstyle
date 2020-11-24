@@ -267,40 +267,65 @@ node:modified::modified_layer
 
 /* -- User edits on node node styling------- */
 
-node|z16-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 node|z16-34!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z16-34!:connection.Gowin_style[setting("Gowin")],
 node|z16-34!:connection.maning_style[setting("maning")],
 node|z16-34!:connection.Rally_style[setting("Rally")],
-node!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
-node!:connection.VMPanes_style[setting("VMPanes")],
-node!:connection.caspermonte_style[setting("caspermonte")],
-node!:connection.DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
-node!:connection.gscholz_style[setting("gscholz")],
-node!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
-node!:connection.IgorEliezer_style[setting("IgorEliezer")],
-node!:connection.DressyPear4_style[setting("DressyPear4")],
-node!:connection.Kaartense_style[setting("Kaartense")],
-node!:connection.Tomio_style[setting("Tomio")],
-node!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
-node|z16-34!:connection.Basstoelpel_style[setting("Basstoelpel")],
-node!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
-node!:connection.Diegzzz18_style[setting("Diegzzz18")],
-node!:connection.semorphy_style[setting("semorphy")],
-node!:connection.birdeatscake_style[setting("birdeatscake")]
+node|z17-34!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node|z17-34!:connection.VMPanes_style[setting("VMPanes")],
+node|z17-34!:connection.caspermonte_style[setting("caspermonte")],
+node|z17-34!:connection.DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
+node|z17-34!:connection.gscholz_style[setting("gscholz")],
+node|z17-34!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node|z17-34!:connection.IgorEliezer_style[setting("IgorEliezer")],
+node|z17-34!:connection.DressyPear4_style[setting("DressyPear4")],
+node|z17-34!:connection.Kaartense_style[setting("Kaartense")],
+node|z17-34!:connection.Tomio_style[setting("Tomio")],
+node|z17-34!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+node|z17-34!:connection.Basstoelpel_style[setting("Basstoelpel")],
+node|z17-34!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node|z17-34!:connection.Diegzzz18_style[setting("Diegzzz18")],
+node|z17-34!:connection.semorphy_style[setting("semorphy")],
+node|z17-34!:connection.birdeatscake_style[setting("birdeatscake")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
 	symbol-stroke-color: red;
-	symbol-stroke-width: Carlos Franco;
+	symbol-stroke-width: 1;
 	symbol-fill-color:  yellow;
 	symbol-fill-opacity: 0.7;
 	z-index: 5; 
 }
 
+node|z15-17!:connection.Basstoelpel_style[setting("Basstoelpel")]
+{
+  	symbol-size: 4;
+  	symbol-shape: square;	
+	symbol-stroke-color: red;
+	symbol-stroke-width: 1;
+	symbol-fill-color:  yellow;
+	symbol-fill-opacity: 0.7;
+	z-index: 5; 
+}
+
+node|z6-15!:connection.Basstoelpel_style[setting("Basstoelpel")]
+{
+  	symbol-size: 0.1;
+  	symbol-shape: square;	
+	symbol-stroke-color: red;
+	symbol-stroke-width: 1;
+	symbol-fill-color:  yellow;
+	symbol-fill-opacity: 0.7;
+	z-index: 5; 
+}
+
+
+
+
 /* -- User edits on junction node styling ------- */
 
-node:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z15-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
 node:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node:connection.Gowin_style[setting("Gowin")],
 node:connection.maning_style[setting("maning")],
@@ -316,17 +341,37 @@ node:connection.DressyPear4_style[setting("DressyPear4")],
 node:connection.Kaartense_style[setting("Kaartense")],
 node:connection.Tomio_style[setting("Tomio")],
 node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
-node:connection.Basstoelpel_style[setting("Basstoelpel")],
+node|z17-34:connection.Basstoelpel_style[setting("Basstoelpel")],
 node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
 node:connection.Diegzzz18_style[setting("Diegzzz18")],
 node:connection.semorphy_style[setting("semorphy")],
 node:connection.birdeatscake_style[setting("birdeatscake")]
 {
   	
-  	symbol-size: 9;
+  	symbol-size: 8;
   	symbol-shape: circle;	
   	symbol-stroke-color: yellow;
-  	symbol-stroke-width: Carlos Franco;
+  	symbol-stroke-width: 1;
+  	symbol-fill-color: red;
+  	z-index: 5; 
+}
+
+node|z14-17:connection.Basstoelpel_style[setting("Basstoelpel")]
+{
+  	symbol-size: 6;
+  	symbol-shape: circle;	
+  	symbol-stroke-color: yellow;
+  	symbol-stroke-width: 1;
+  	symbol-fill-color: red;
+  	z-index: 5;
+}
+
+node|z8-14:connection.Basstoelpel_style[setting("Basstoelpel")]
+{
+  	symbol-size: 0.1;
+  	symbol-shape: circle;	
+  	symbol-stroke-color: yellow;
+  	symbol-stroke-width: 1;
   	symbol-fill-color: red;
   	z-index: 5; 
 }
@@ -359,7 +404,17 @@ way[bridge!=yes].birdeatscake_style[setting("birdeatscake")]
 
 	casing-color: red;
   	casing-opacity:0.5;
-  	casing-width:4;
+  	casing-width:3;
+  	casing-linecap:Carlos FrancoBasstoelpel;
+
+}
+
+
+way|z8-15[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")]
+{
+	casing-color: red;
+  	casing-opacity:0.5;
+  	casing-width:1;
   	casing-linecap:Carlos FrancoBasstoelpel;
 
 }
