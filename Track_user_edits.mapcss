@@ -122,9 +122,9 @@ setting::caspermonte{
 }
 
 
-setting::DPBasstoelpel4PH{
+setting::DP24PH{
 	type: boolean;
-	label: tr("DPBasstoelpel4PH");
+	label: tr("DP24PH");
 	default: true;
 	group: "Philippines";
 }
@@ -213,8 +213,8 @@ node:modified::modified_layer
 	set .caspermonte_style;
 }
 
-*[eval(JOSM_search("user:DPBasstoelpel4PH"))] {
-  	set .DPBasstoelpel4PH_style;
+*[eval(JOSM_search("user:DP24PH"))] {
+  	set .DP24PH_style;
 }	
 
 *[eval(JOSM_search("user:gscholz"))] {
@@ -275,7 +275,7 @@ node|z16-34!:connection.Rally_style[setting("Rally")],
 node|z17-34!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
 node|z17-34!:connection.VMPanes_style[setting("VMPanes")],
 node|z17-34!:connection.caspermonte_style[setting("caspermonte")],
-node|z17-34!:connection.DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
+node|z17-34!:connection.DP24PH_style[setting("DP24PH")],
 node|z17-34!:connection.gscholz_style[setting("gscholz")],
 node|z17-34!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
 node|z17-34!:connection.IgorEliezer_style[setting("IgorEliezer")],
@@ -298,6 +298,28 @@ node|z17-34!:connection.birdeatscake_style[setting("birdeatscake")]
 	z-index: 5; 
 }
 
+
+
+node|z15-17!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z15-17!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node|z15-17!:connection.Gowin_style[setting("Gowin")],
+node|z15-17!:connection.maning_style[setting("maning")],
+node|z15-17!:connection.Rally_style[setting("Rally")],
+node|z15-17!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node|z15-17!:connection.VMPanes_style[setting("VMPanes")],
+node|z15-17!:connection.caspermonte_style[setting("caspermonte")],
+node|z15-17!:connection.DP24PH_style[setting("DP24PH")],
+node|z15-17!:connection.gscholz_style[setting("gscholz")],
+node|z15-17!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node|z15-17!:connection.IgorEliezer_style[setting("IgorEliezer")],
+node|z15-17!:connection.DressyPear4_style[setting("DressyPear4")],
+node|z15-17!:connection.Kaartense_style[setting("Kaartense")],
+node|z15-17!:connection.Tomio_style[setting("Tomio")],
+node|z15-17!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+node|z15-17!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node|z15-17!:connection.Diegzzz18_style[setting("Diegzzz18")],
+node|z15-17!:connection.semorphy_style[setting("semorphy")],
+node|z15-17!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z15-17!:connection.Basstoelpel_style[setting("Basstoelpel")]
 {
   	symbol-size: 4;
@@ -309,6 +331,26 @@ node|z15-17!:connection.Basstoelpel_style[setting("Basstoelpel")]
 	z-index: 5; 
 }
 
+node|z6-15!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z6-15!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node|z6-15!:connection.Gowin_style[setting("Gowin")],
+node|z6-15!:connection.maning_style[setting("maning")],
+node|z6-15!:connection.Rally_style[setting("Rally")],
+node|z6-15!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node|z6-15!:connection.VMPanes_style[setting("VMPanes")],
+node|z6-15!:connection.caspermonte_style[setting("caspermonte")],
+node|z6-15!:connection.DP24PH_style[setting("DP24PH")],
+node|z6-15!:connection.gscholz_style[setting("gscholz")],
+node|z6-15!:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node|z6-15!:connection.IgorEliezer_style[setting("IgorEliezer")],
+node|z6-15!:connection.DressyPear4_style[setting("DressyPear4")],
+node|z6-15!:connection.Kaartense_style[setting("Kaartense")],
+node|z6-15!:connection.Tomio_style[setting("Tomio")],
+node|z6-15!:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+node|z6-15!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node|z6-15!:connection.Diegzzz18_style[setting("Diegzzz18")],
+node|z6-15!:connection.semorphy_style[setting("semorphy")],
+node|z6-15!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z6-15!:connection.Basstoelpel_style[setting("Basstoelpel")]
 {
   	symbol-size: 0.1;
@@ -321,31 +363,29 @@ node|z6-15!:connection.Basstoelpel_style[setting("Basstoelpel")]
 }
 
 
-
-
 /* -- User edits on junction node styling ------- */
 
-node|z15-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
-node:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node:connection.Gowin_style[setting("Gowin")],
-node:connection.maning_style[setting("maning")],
-node:connection.Rally_style[setting("Rally")],
-node:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
-node:connection.VMPanes_style[setting("VMPanes")],
-node:connection.caspermonte_style[setting("caspermonte")],
-node:connection.DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
-node:connection.gscholz_style[setting("gscholz")],
-node:connection.AjBelnuovo_style[setting("AjBelnuovo")],
-node:connection.IgorEliezer_style[setting("IgorEliezer")],
-node:connection.DressyPear4_style[setting("DressyPear4")],
-node:connection.Kaartense_style[setting("Kaartense")],
-node:connection.Tomio_style[setting("Tomio")],
-node:connection.Lars_TheViking_style[setting("Lars_TheViking")],
-node|z17-34:connection.Basstoelpel_style[setting("Basstoelpel")],
-node:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
-node:connection.Diegzzz18_style[setting("Diegzzz18")],
-node:connection.semorphy_style[setting("semorphy")],
-node:connection.birdeatscake_style[setting("birdeatscake")]
+node|z16-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z16-34:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node|z16-34:connection.Gowin_style[setting("Gowin")],
+node|z16-34:connection.maning_style[setting("maning")],
+node|z16-34:connection.Rally_style[setting("Rally")],
+node|z16-34:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node|z16-34:connection.VMPanes_style[setting("VMPanes")],
+node|z16-34:connection.caspermonte_style[setting("caspermonte")],
+node|z16-34:connection.DP24PH_style[setting("DP24PH")],
+node|z16-34:connection.gscholz_style[setting("gscholz")],
+node|z16-34:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node|z16-34:connection.IgorEliezer_style[setting("IgorEliezer")],
+node|z16-34:connection.DressyPear4_style[setting("DressyPear4")],
+node|z16-34:connection.Kaartense_style[setting("Kaartense")],
+node|z16-34:connection.Tomio_style[setting("Tomio")],
+node|z16-34:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+node|z16-34:connection.Basstoelpel_style[setting("Basstoelpel")],
+node|z16-34:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node|z16-34:connection.Diegzzz18_style[setting("Diegzzz18")],
+node|z16-34:connection.semorphy_style[setting("semorphy")],
+node|z16-34:connection.birdeatscake_style[setting("birdeatscake")]
 {
   	
   	symbol-size: 8;
@@ -356,7 +396,27 @@ node:connection.birdeatscake_style[setting("birdeatscake")]
   	z-index: 5; 
 }
 
-node|z14-17:connection.Basstoelpel_style[setting("Basstoelpel")]
+node|z14-16:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z14-16:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node|z14-16:connection.Gowin_style[setting("Gowin")],
+node|z14-16:connection.maning_style[setting("maning")],
+node|z14-16:connection.Rally_style[setting("Rally")],
+node|z14-16:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node|z14-16:connection.VMPanes_style[setting("VMPanes")],
+node|z14-16:connection.caspermonte_style[setting("caspermonte")],
+node|z14-16:connection.DP24PH_style[setting("DP24PH")],
+node|z14-16:connection.gscholz_style[setting("gscholz")],
+node|z14-16:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node|z14-16:connection.IgorEliezer_style[setting("IgorEliezer")],
+node|z14-16:connection.DressyPear4_style[setting("DressyPear4")],
+node|z14-16:connection.Kaartense_style[setting("Kaartense")],
+node|z14-16:connection.Tomio_style[setting("Tomio")],
+node|z14-16:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+node|z14-16:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node|z14-16:connection.Diegzzz18_style[setting("Diegzzz18")],
+node|z14-16:connection.semorphy_style[setting("semorphy")],
+node|z14-16:connection.birdeatscake_style[setting("birdeatscake")],
+node|z14-16:connection.Basstoelpel_style[setting("Basstoelpel")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -366,6 +426,26 @@ node|z14-17:connection.Basstoelpel_style[setting("Basstoelpel")]
   	z-index: 5;
 }
 
+node|z8-14:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z8-14:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+node|z8-14:connection.Gowin_style[setting("Gowin")],
+node|z8-14:connection.maning_style[setting("maning")],
+node|z8-14:connection.Rally_style[setting("Rally")],
+node|z8-14:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+node|z8-14:connection.VMPanes_style[setting("VMPanes")],
+node|z8-14:connection.caspermonte_style[setting("caspermonte")],
+node|z8-14:connection.DP24PH_style[setting("DP24PH")],
+node|z8-14:connection.gscholz_style[setting("gscholz")],
+node|z8-14:connection.AjBelnuovo_style[setting("AjBelnuovo")],
+node|z8-14:connection.IgorEliezer_style[setting("IgorEliezer")],
+node|z8-14:connection.DressyPear4_style[setting("DressyPear4")],
+node|z8-14:connection.Kaartense_style[setting("Kaartense")],
+node|z8-14:connection.Tomio_style[setting("Tomio")],
+node|z8-14:connection.Lars_TheViking_style[setting("Lars_TheViking")],
+node|z8-14:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+node|z8-14:connection.Diegzzz18_style[setting("Diegzzz18")],
+node|z8-14:connection.semorphy_style[setting("semorphy")],
+node|z8-14:connection.birdeatscake_style[setting("birdeatscake")],
 node|z8-14:connection.Basstoelpel_style[setting("Basstoelpel")]
 {
   	symbol-size: 0.1;
@@ -387,7 +467,7 @@ way[bridge!=yes].Rally_style[setting("Rally")],
 way[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
 way[bridge!=yes].VMPanes_style[setting("VMPanes")],
 way[bridge!=yes].caspermonte_style[setting("caspermonte")],
-way[bridge!=yes].DPBasstoelpel4PH_style[setting("DPBasstoelpel4PH")],
+way[bridge!=yes].DP24PH_style[setting("DP24PH")],
 way[bridge!=yes].gscholz_style[setting("gscholz")],
 way[bridge!=yes].AjBelnuovo_style[setting("AjBelnuovo")],
 way[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
@@ -410,6 +490,26 @@ way[bridge!=yes].birdeatscake_style[setting("birdeatscake")]
 }
 
 
+way|z8-15[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+way|z8-15[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+way|z8-15[bridge!=yes].Gowin_style[setting("Gowin")],
+way|z8-15[bridge!=yes].maning_style[setting("maning")],
+way|z8-15[bridge!=yes].Rally_style[setting("Rally")],
+way|z8-15[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+way|z8-15[bridge!=yes].VMPanes_style[setting("VMPanes")],
+way|z8-15[bridge!=yes].caspermonte_style[setting("caspermonte")],
+way|z8-15[bridge!=yes].DP24PH_style[setting("DP24PH")],
+way|z8-15[bridge!=yes].gscholz_style[setting("gscholz")],
+way|z8-15[bridge!=yes].AjBelnuovo_style[setting("AjBelnuovo")],
+way|z8-15[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
+way|z8-15[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
+way|z8-15[bridge!=yes].Kaartense_style[setting("Kaartense")],
+way|z8-15[bridge!=yes].Tomio_style[setting("Tomio")],
+way|z8-15[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
+way|z8-15[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+way|z8-15[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
+way|z8-15[bridge!=yes].semorphy_style[setting("semorphy")],
+way|z8-15[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
 way|z8-15[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")]
 {
 	casing-color: red;
