@@ -177,6 +177,7 @@ setting::birdeatscake{
 
 setting::cRaIgalLAn{
 	type: boolean;
+	label: tr("cRaIgalLAn");
 	default: true;
 	group: "Niger";
 }
