@@ -177,8 +177,7 @@ setting::birdeatscake{
 
 setting::cRaIgalLAn{
 	type: boolean;
-	label: tr("cRaIgalLAn");
-	default: true;
+wa	default: true;
 	group: "Niger";
 }
 
@@ -514,32 +513,32 @@ way|z16-34[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")]
 }
 
 
-way|z8-15[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
-way|z8-15[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-way|z8-15[bridge!=yes].Gowin_style[setting("Gowin")],
-way|z8-15[bridge!=yes].maning_style[setting("maning")],
-way|z8-15[bridge!=yes].Rally_style[setting("Rally")],
-way|z8-15[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
-way|z8-15[bridge!=yes].VMPanes_style[setting("VMPanes")],
-way|z8-15[bridge!=yes].caspermonte_style[setting("caspermonte")],
-way|z8-15[bridge!=yes].DP24PH_style[setting("DP24PH")],
-way|z8-15[bridge!=yes].gscholz_style[setting("gscholz")],
-way|z8-15[bridge!=yes].AjBelnuovo_style[setting("AjBelnuovo")],
-way|z8-15[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
-way|z8-15[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
-way|z8-15[bridge!=yes].Kaartense_style[setting("Kaartense")],
-way|z8-15[bridge!=yes].Tomio_style[setting("Tomio")],
-way|z8-15[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
-way|z8-15[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
-way|z8-15[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
-way|z8-15[bridge!=yes].semorphy_style[setting("semorphy")],
-way|z8-15[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
-way|z8-15[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
-way|z8-15[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")]
+way|z8-16[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+way|z8-16[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
+way|z8-16[bridge!=yes].Gowin_style[setting("Gowin")],
+way|z8-16[bridge!=yes].maning_style[setting("maning")],
+way|z8-16[bridge!=yes].Rally_style[setting("Rally")],
+way|z8-16[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
+way|z8-16[bridge!=yes].VMPanes_style[setting("VMPanes")],
+way|z8-16[bridge!=yes].caspermonte_style[setting("caspermonte")],
+way|z8-16[bridge!=yes].DP24PH_style[setting("DP24PH")],
+way|z8-16[bridge!=yes].gscholz_style[setting("gscholz")],
+way|z8-16[bridge!=yes].AjBelnuovo_style[setting("AjBelnuovo")],
+way|z8-16[bridge!=yes].IgorEliezer_style[setting("IgorEliezer")],
+way|z8-16[bridge!=yes].DressyPear4_style[setting("DressyPear4")],
+way|z8-16[bridge!=yes].Kaartense_style[setting("Kaartense")],
+way|z8-16[bridge!=yes].Tomio_style[setting("Tomio")],
+way|z8-16[bridge!=yes].Lars_TheViking_style[setting("Lars_TheViking")],
+way|z8-16[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapadelphia")],
+way|z8-16[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
+way|z8-16[bridge!=yes].semorphy_style[setting("semorphy")],
+way|z8-16[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
+way|z8-16[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
+way|z8-16[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
-  	casing-width:1;
+  	casing-width:1.5;
   	casing-linecap:Carlos FrancoBasstoelpel;
 
 }
