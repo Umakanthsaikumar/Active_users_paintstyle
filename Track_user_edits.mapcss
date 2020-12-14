@@ -1,6 +1,7 @@
 meta {
 	title: "Active Users Paintstyle";
-	description: "This map paint style was created to higlight active users edits"
+	description: "This map paint style was created to higlight active users edits";
+	last_updated: "14-Dec-2020"
 }
 
 
@@ -79,6 +80,13 @@ setting::Tomio{
 setting::Lars_TheViking{
 	type: boolean;
 	label: tr("Lars_TheViking");
+	default: true;
+	group: "Brazil";
+}
+
+setting::ftrebien{
+	type: boolean;
+	label: tr("ftrebien");
 	default: true;
 	group: "Brazil";
 }
@@ -183,7 +191,6 @@ setting::cRaIgalLAn{
 }
 
 
-
 node:modified::modified_layer 
 {
     symbol-shape: circle;
@@ -282,6 +289,10 @@ node:modified::modified_layer
   	set .cRaIgalLAn_style;
 }
 
+*[eval(JOSM_search("user:ftrebien"))] {
+  	set .ftrebien_style;
+}
+
 /* -- User edits on node node styling------- */
 
 node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
@@ -305,7 +316,8 @@ node|z17-34!:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMap
 node|z17-34!:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z17-34!:connection.semorphy_style[setting("semorphy")],
 node|z17-34!:connection.birdeatscake_style[setting("birdeatscake")],
-node|z17-34!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")]
+node|z17-34!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
+node|z17-34!:connection.ftrebien_style[setting("ftrebien")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -339,7 +351,8 @@ node|z15-17!:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z15-17!:connection.semorphy_style[setting("semorphy")],
 node|z15-17!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z15-17!:connection.Basstoelpel_style[setting("Basstoelpel")],
-node|z15-17!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")]
+node|z15-17!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
+node|z15-17!:connection.ftrebien_style[setting("ftrebien")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -371,7 +384,8 @@ node|z6-15!:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z6-15!:connection.semorphy_style[setting("semorphy")],
 node|z6-15!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z6-15!:connection.Basstoelpel_style[setting("Basstoelpel")],
-node|z6-15!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")]
+node|z6-15!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
+node|z6-15!:connection.ftrebien_style[setting("ftrebien")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -406,7 +420,8 @@ node|z16-34:connection.AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMapa
 node|z16-34:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z16-34:connection.semorphy_style[setting("semorphy")],
 node|z16-34:connection.birdeatscake_style[setting("birdeatscake")],
-node|z16-34:connection.cRaIgalLAn_style[setting("cRaIgalLAn")]
+node|z16-34:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
+node|z16-34:connection.ftrebien_style[setting("ftrebien")]
 {
   	
   	symbol-size: 8;
@@ -438,7 +453,8 @@ node|z14-16:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z14-16:connection.semorphy_style[setting("semorphy")],
 node|z14-16:connection.birdeatscake_style[setting("birdeatscake")],
 node|z14-16:connection.Basstoelpel_style[setting("Basstoelpel")],
-node|z14-16:connection.cRaIgalLAn_style[setting("cRaIgalLAn")]
+node|z14-16:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
+node|z14-16:connection.ftrebien_style[setting("ftrebien")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -469,7 +485,8 @@ node|z8-14:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z8-14:connection.semorphy_style[setting("semorphy")],
 node|z8-14:connection.birdeatscake_style[setting("birdeatscake")],
 node|z8-14:connection.Basstoelpel_style[setting("Basstoelpel")],
-node|z8-14:connection.cRaIgalLAn_style[setting("cRaIgalLAn")]
+node|z8-14:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
+node|z8-14:connection.ftrebien_style[setting("ftrebien")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -503,7 +520,8 @@ way|z15-34[bridge!=yes].AlwaysSunnyInMapadelphia_style[setting("AlwaysSunnyInMap
 way|z15-34[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
 way|z15-34[bridge!=yes].semorphy_style[setting("semorphy")],
 way|z15-34[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
-way|z15-34[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")]
+way|z15-34[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")],
+way|z15-34[bridge!=yes].ftrebien_style[setting("ftrebien")]
 {
 
 	casing-color: red;
@@ -535,7 +553,8 @@ way|z8-15[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
 way|z8-15[bridge!=yes].semorphy_style[setting("semorphy")],
 way|z8-15[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
 way|z8-15[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
-way|z8-15[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")]
+way|z8-15[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")],
+way|z8-15[bridge!=yes].ftrebien_style[setting("ftrebien")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
