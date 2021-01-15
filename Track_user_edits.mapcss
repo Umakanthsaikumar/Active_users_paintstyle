@@ -25,6 +25,10 @@ settings::Niger {
 	label: tr("4. Niger")
 }
 
+settings::Europe {
+	label: tr("5. Europe")
+}
+
 /* -- User setting List------- */
 
 setting::erickdeoliveiraleal{
@@ -191,6 +195,57 @@ setting::cRaIgalLAn{
 }
 
 
+setting::Hjart{
+	type: boolean;
+	label: tr("Hjart");
+	default: true;
+	group: "Europe";
+}
+
+setting::osmviborg{
+	type: boolean;
+	label: tr("osmviborg");
+	default: true;
+	group: "Europe";
+}
+
+setting::AE35{
+	type: boolean;
+	label: tr("AE35");
+	default: true;
+	group: "Europe";
+}
+
+setting::razor74{
+	type: boolean;
+	label: tr("razor74");
+	default: true;
+	group: "Europe";
+}
+
+setting::JayCBR{
+	type: boolean;
+	label: tr("JayCBR");
+	default: true;
+	group: "Europe";
+}
+
+
+setting::nikospag{
+	type: boolean;
+	label: tr("nikospag");
+	default: true;
+	group: "Europe";
+}
+
+setting::beatnickgr{
+	type: boolean;
+	label: tr("beatnickgr");
+	default: true;
+	group: "Europe";
+}
+
+
 node:modified::modified_layer 
 {
     symbol-shape: circle;
@@ -293,6 +348,39 @@ node:modified::modified_layer
   	set .ftrebien_style;
 }
 
+*[eval(JOSM_search("user:ftrebien"))] {
+  	set .ftrebien_style;
+}
+
+*[eval(JOSM_search("user:Hjart"))] {
+  	set .Hjart_style;
+}
+
+*[eval(JOSM_search("user:osmviborg"))] {
+  	set .osmviborg_style;
+}
+
+*[eval(JOSM_search("user:AE35"))] {
+  	set .AE35_style;
+}
+
+*[eval(JOSM_search("user:razor74"))] {
+  	set .razor74_style;
+}
+
+*[eval(JOSM_search("user:JayCBR"))] {
+  	set .JayCBR_style;
+}
+
+*[eval(JOSM_search("user:nikospag"))] {
+  	set .nikospag_style;
+}
+
+*[eval(JOSM_search("user:beatnickgr"))] {
+  	set .beatnickgr_style;
+}
+
+
 /* -- User edits on node node styling------- */
 
 node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
@@ -317,7 +405,14 @@ node|z17-34!:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z17-34!:connection.semorphy_style[setting("semorphy")],
 node|z17-34!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z17-34!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
-node|z17-34!:connection.ftrebien_style[setting("ftrebien")]
+node|z17-34!:connection.ftrebien_style[setting("ftrebien")],
+node|z17-34!:connection.Hjart_style[setting("Hjart")],
+node|z17-34!:connection.osmviborg_style[setting("osmviborg")],
+node|z17-34!:connection.AE35_style[setting("AE35")],
+node|z17-34!:connection.razor74_style[setting("razor74")],
+node|z17-34!:connection.JayCBR_style[setting("JayCBR")],
+node|z17-34!:connection.nikospag_style[setting("nikospag")],
+node|z17-34!:connection.beatnickgr_style[setting("beatnickgr")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -352,7 +447,14 @@ node|z15-17!:connection.semorphy_style[setting("semorphy")],
 node|z15-17!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z15-17!:connection.Basstoelpel_style[setting("Basstoelpel")],
 node|z15-17!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
-node|z15-17!:connection.ftrebien_style[setting("ftrebien")]
+node|z15-17!:connection.ftrebien_style[setting("ftrebien")],
+node|z15-17!:connection.Hjart_style[setting("Hjart")],
+node|z15-17!:connection.osmviborg_style[setting("osmviborg")],
+node|z15-17!:connection.AE35_style[setting("AE35")],
+node|z15-17!:connection.razor74_style[setting("razor74")],
+node|z15-17!:connection.JayCBR_style[setting("JayCBR")],
+node|z15-17!:connection.nikospag_style[setting("nikospag")],
+node|z15-17!:connection.beatnickgr_style[setting("beatnickgr")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -385,7 +487,14 @@ node|z6-15!:connection.semorphy_style[setting("semorphy")],
 node|z6-15!:connection.birdeatscake_style[setting("birdeatscake")],
 node|z6-15!:connection.Basstoelpel_style[setting("Basstoelpel")],
 node|z6-15!:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
-node|z6-15!:connection.ftrebien_style[setting("ftrebien")]
+node|z6-15!:connection.ftrebien_style[setting("ftrebien")],
+node|z6-15!:connection.Hjart_style[setting("Hjart")],
+node|z6-15!:connection.osmviborg_style[setting("osmviborg")],
+node|z6-15!:connection.AE35_style[setting("AE35")],
+node|z6-15!:connection.razor74_style[setting("razor74")],
+node|z6-15!:connection.JayCBR_style[setting("JayCBR")],
+node|z6-15!:connection.nikospag_style[setting("nikospag")],
+node|z6-15!:connection.beatnickgr_style[setting("beatnickgr")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -421,7 +530,14 @@ node|z16-34:connection.Diegzzz18_style[setting("Diegzzz18")],
 node|z16-34:connection.semorphy_style[setting("semorphy")],
 node|z16-34:connection.birdeatscake_style[setting("birdeatscake")],
 node|z16-34:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
-node|z16-34:connection.ftrebien_style[setting("ftrebien")]
+node|z16-34:connection.ftrebien_style[setting("ftrebien")],
+node|z16-34:connection.Hjart_style[setting("Hjart")],
+node|z16-34:connection.osmviborg_style[setting("osmviborg")],
+node|z16-34:connection.AE35_style[setting("AE35")],
+node|z16-34:connection.razor74_style[setting("razor74")],
+node|z16-34:connection.JayCBR_style[setting("JayCBR")],
+node|z16-34:connection.nikospag_style[setting("nikospag")],
+node|z16-34:connection.beatnickgr_style[setting("beatnickgr")]
 {
   	
   	symbol-size: 8;
@@ -454,7 +570,14 @@ node|z14-16:connection.semorphy_style[setting("semorphy")],
 node|z14-16:connection.birdeatscake_style[setting("birdeatscake")],
 node|z14-16:connection.Basstoelpel_style[setting("Basstoelpel")],
 node|z14-16:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
-node|z14-16:connection.ftrebien_style[setting("ftrebien")]
+node|z14-16:connection.ftrebien_style[setting("ftrebien")],
+node|z14-16:connection.Hjart_style[setting("Hjart")],
+node|z14-16:connection.osmviborg_style[setting("osmviborg")],
+node|z14-16:connection.AE35_style[setting("AE35")],
+node|z14-16:connection.razor74_style[setting("razor74")],
+node|z14-16:connection.JayCBR_style[setting("JayCBR")],
+node|z14-16:connection.nikospag_style[setting("nikospag")],
+node|z14-16:connection.beatnickgr_style[setting("beatnickgr")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -486,7 +609,14 @@ node|z8-14:connection.semorphy_style[setting("semorphy")],
 node|z8-14:connection.birdeatscake_style[setting("birdeatscake")],
 node|z8-14:connection.Basstoelpel_style[setting("Basstoelpel")],
 node|z8-14:connection.cRaIgalLAn_style[setting("cRaIgalLAn")],
-node|z8-14:connection.ftrebien_style[setting("ftrebien")]
+node|z8-14:connection.ftrebien_style[setting("ftrebien")],
+node|z8-14:connection.Hjart_style[setting("Hjart")],
+node|z8-14:connection.osmviborg_style[setting("osmviborg")],
+node|z8-14:connection.AE35_style[setting("AE35")],
+node|z8-14:connection.razor74_style[setting("razor74")],
+node|z8-14:connection.JayCBR_style[setting("JayCBR")],
+node|z8-14:connection.nikospag_style[setting("nikospag")],
+node|z8-14:connection.beatnickgr_style[setting("beatnickgr")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -521,7 +651,14 @@ way|z15-34[bridge!=yes].Diegzzz18_style[setting("Diegzzz18")],
 way|z15-34[bridge!=yes].semorphy_style[setting("semorphy")],
 way|z15-34[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
 way|z15-34[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")],
-way|z15-34[bridge!=yes].ftrebien_style[setting("ftrebien")]
+way|z15-34[bridge!=yes].ftrebien_style[setting("ftrebien")],
+way|z15-34[bridge!=yes].Hjart_style[setting("Hjart")],
+way|z15-34[bridge!=yes].osmviborg_style[setting("osmviborg")],
+way|z15-34[bridge!=yes].AE35_style[setting("AE35")],
+way|z15-34[bridge!=yes].razor74_style[setting("razor74")],
+way|z15-34[bridge!=yes].JayCBR_style[setting("JayCBR")],
+way|z15-34[bridge!=yes].nikospag_style[setting("nikospag")],
+way|z15-34[bridge!=yes].beatnickgr_style[setting("beatnickgr")]
 {
 
 	casing-color: red;
@@ -554,7 +691,14 @@ way|z8-15[bridge!=yes].semorphy_style[setting("semorphy")],
 way|z8-15[bridge!=yes].birdeatscake_style[setting("birdeatscake")],
 way|z8-15[bridge!=yes].Basstoelpel_style[setting("Basstoelpel")],
 way|z8-15[bridge!=yes].cRaIgalLAn_style[setting("cRaIgalLAn")],
-way|z8-15[bridge!=yes].ftrebien_style[setting("ftrebien")]
+way|z8-15[bridge!=yes].ftrebien_style[setting("ftrebien")],
+way|z8-15[bridge!=yes].Hjart_style[setting("Hjart")],
+way|z8-15[bridge!=yes].osmviborg_style[setting("osmviborg")],
+way|z8-15[bridge!=yes].AE35_style[setting("AE35")],
+way|z8-15[bridge!=yes].razor74_style[setting("razor74")],
+way|z8-15[bridge!=yes].JayCBR_style[setting("JayCBR")],
+way|z8-15[bridge!=yes].nikospag_style[setting("nikospag")],
+way|z8-15[bridge!=yes].beatnickgr_style[setting("beatnickgr")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
