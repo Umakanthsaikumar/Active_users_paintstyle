@@ -664,7 +664,7 @@ way|z15-34[bridge!=yes].beatnickgr_style[setting("beatnickgr")]
 	casing-color: red;
   	casing-opacity:0.5;
   	casing-width:3;
-  	casing-linecap:Carlos FrancoBasstoelpel;
+  	casing-linecap:2;
 
 }
 
@@ -703,6 +703,6 @@ way|z8-15[bridge!=yes].beatnickgr_style[setting("beatnickgr")]
 	casing-color: red;
   	casing-opacity:0.5;
   	casing-width:1.5;
-  	casing-linecap:Carlos FrancoBasstoelpel;
+  	casing-linecap:2;
 
 }
