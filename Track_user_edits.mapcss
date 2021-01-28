@@ -1,7 +1,7 @@
 meta {
 	title: "Active Users Paintstyle";
 	description: "This map paint style was created to higlight active users edits";
-	last_updated: "14-Dec-2020"
+	last_updated: "28-Jan-2021"
 }
 
 
@@ -91,6 +91,13 @@ setting::Lars_TheViking{
 setting::ftrebien{
 	type: boolean;
 	label: tr("ftrebien");
+	default: true;
+	group: "Brazil";
+}
+
+setting::raphaelmirc{
+	type: boolean;
+	label: tr("raphaelmirc");
 	default: true;
 	group: "Brazil";
 }
@@ -380,6 +387,10 @@ node:modified::modified_layer
   	set .beatnickgr_style;
 }
 
+*[eval(JOSM_search("user:raphaelmirc"))] {
+  	set .raphaelmirc_style;
+}
+
 
 /* -- User edits on node node styling------- */
 
@@ -412,7 +423,8 @@ node|z17-34!:connection.AE35_style[setting("AE35")],
 node|z17-34!:connection.razor74_style[setting("razor74")],
 node|z17-34!:connection.JayCBR_style[setting("JayCBR")],
 node|z17-34!:connection.nikospag_style[setting("nikospag")],
-node|z17-34!:connection.beatnickgr_style[setting("beatnickgr")]
+node|z17-34!:connection.beatnickgr_style[setting("beatnickgr")],
+node|z17-34!:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -454,7 +466,8 @@ node|z15-17!:connection.AE35_style[setting("AE35")],
 node|z15-17!:connection.razor74_style[setting("razor74")],
 node|z15-17!:connection.JayCBR_style[setting("JayCBR")],
 node|z15-17!:connection.nikospag_style[setting("nikospag")],
-node|z15-17!:connection.beatnickgr_style[setting("beatnickgr")]
+node|z15-17!:connection.beatnickgr_style[setting("beatnickgr")],
+node|z15-17!:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -494,7 +507,8 @@ node|z6-15!:connection.AE35_style[setting("AE35")],
 node|z6-15!:connection.razor74_style[setting("razor74")],
 node|z6-15!:connection.JayCBR_style[setting("JayCBR")],
 node|z6-15!:connection.nikospag_style[setting("nikospag")],
-node|z6-15!:connection.beatnickgr_style[setting("beatnickgr")]
+node|z6-15!:connection.beatnickgr_style[setting("beatnickgr")],
+node|z6-15!:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -537,7 +551,8 @@ node|z16-34:connection.AE35_style[setting("AE35")],
 node|z16-34:connection.razor74_style[setting("razor74")],
 node|z16-34:connection.JayCBR_style[setting("JayCBR")],
 node|z16-34:connection.nikospag_style[setting("nikospag")],
-node|z16-34:connection.beatnickgr_style[setting("beatnickgr")]
+node|z16-34:connection.beatnickgr_style[setting("beatnickgr")],
+node|z16-34:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	
   	symbol-size: 8;
@@ -577,7 +592,8 @@ node|z14-16:connection.AE35_style[setting("AE35")],
 node|z14-16:connection.razor74_style[setting("razor74")],
 node|z14-16:connection.JayCBR_style[setting("JayCBR")],
 node|z14-16:connection.nikospag_style[setting("nikospag")],
-node|z14-16:connection.beatnickgr_style[setting("beatnickgr")]
+node|z14-16:connection.beatnickgr_style[setting("beatnickgr")],
+node|z14-16:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -616,7 +632,8 @@ node|z8-14:connection.AE35_style[setting("AE35")],
 node|z8-14:connection.razor74_style[setting("razor74")],
 node|z8-14:connection.JayCBR_style[setting("JayCBR")],
 node|z8-14:connection.nikospag_style[setting("nikospag")],
-node|z8-14:connection.beatnickgr_style[setting("beatnickgr")]
+node|z8-14:connection.beatnickgr_style[setting("beatnickgr")],
+node|z8-14:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -658,7 +675,8 @@ way|z15-34[bridge!=yes].AE35_style[setting("AE35")],
 way|z15-34[bridge!=yes].razor74_style[setting("razor74")],
 way|z15-34[bridge!=yes].JayCBR_style[setting("JayCBR")],
 way|z15-34[bridge!=yes].nikospag_style[setting("nikospag")],
-way|z15-34[bridge!=yes].beatnickgr_style[setting("beatnickgr")]
+way|z15-34[bridge!=yes].beatnickgr_style[setting("beatnickgr")],
+way|z15-34[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")]
 {
 
 	casing-color: red;
@@ -698,7 +716,8 @@ way|z8-15[bridge!=yes].AE35_style[setting("AE35")],
 way|z8-15[bridge!=yes].razor74_style[setting("razor74")],
 way|z8-15[bridge!=yes].JayCBR_style[setting("JayCBR")],
 way|z8-15[bridge!=yes].nikospag_style[setting("nikospag")],
-way|z8-15[bridge!=yes].beatnickgr_style[setting("beatnickgr")]
+way|z8-15[bridge!=yes].beatnickgr_style[setting("beatnickgr")],
+way|z8-15[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
