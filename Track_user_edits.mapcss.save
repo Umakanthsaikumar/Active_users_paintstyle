@@ -1,7 +1,7 @@
 meta {
 	title: "Active Users Paintstyle";
 	description: "This map paint style was created to higlight active users edits";
-	last_updated: "28-Jan-2021"
+	last_updated: "08-Mar-2021"
 }
 
 
@@ -102,23 +102,9 @@ setting::raphaelmirc{
 	group: "Brazil";
 }
 
-setting::tarta{
+setting::Gowin{
 	type: boolean;
-	label: tr("tarta");
-	default: true;
-	group: "Brazil";
-}
-
-setting::wazzolini{
-	type: boolean;
-	label: tr("wazzolini");
-	default: true;
-	group: "Brazil";
-}
-
-setting::GOwin{
-	type: boolean;
-	label: tr("GOwin");
+	label: tr("Gowin");
 	default: true;
 	group: "Philippines";
 }
@@ -285,8 +271,8 @@ node:modified::modified_layer
   	set .Timmy_Tesseract_style;
 }
 
-*[eval(JOSM_search("user:GOwin"))] {
-  	set .GOwin_style;
+*[eval(JOSM_search("user:Gowin"))] {
+  	set .Gowin_style;
 }
 
 *[eval(JOSM_search("user:maning"))] {
@@ -299,10 +285,6 @@ node:modified::modified_layer
 
 *[eval(JOSM_search("user:TagaSanPedroAko"))] {
   	set .TagaSanPedroAko_style;
-}
-
-*[eval(JOSM_search("user:tarta"))] {
-  	set .tarta_style;
 }
 
 *[eval(JOSM_search("user:VMPanes"))] {
@@ -373,8 +355,8 @@ node:modified::modified_layer
   	set .ftrebien_style;
 }
 
-*[eval(JOSM_search("user:wazzolini"))] {
-  	set .wazzolini_style;
+*[eval(JOSM_search("user:ftrebien"))] {
+  	set .ftrebien_style;
 }
 
 *[eval(JOSM_search("user:Hjart"))] {
@@ -414,7 +396,7 @@ node:modified::modified_layer
 
 node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 node|z16-34!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node|z16-34!:connection.GOwin_style[setting("GOwin")],
+node|z16-34!:connection.Gowin_style[setting("Gowin")],
 node|z16-34!:connection.maning_style[setting("maning")],
 node|z16-34!:connection.Rally_style[setting("Rally")],
 node|z17-34!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -442,9 +424,7 @@ node|z17-34!:connection.razor74_style[setting("razor74")],
 node|z17-34!:connection.JayCBR_style[setting("JayCBR")],
 node|z17-34!:connection.nikospag_style[setting("nikospag")],
 node|z17-34!:connection.beatnickgr_style[setting("beatnickgr")],
-node|z17-34!:connection.raphaelmirc_style[setting("raphaelmirc")],
-node|z17-34!:connection.tarta_style[setting("tarta")],
-node|z17-34!:connection.wazzolini_style[setting("wazzolini")]
+node|z17-34!:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -459,7 +439,7 @@ node|z17-34!:connection.wazzolini_style[setting("wazzolini")]
 
 node|z15-17!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 node|z15-17!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node|z15-17!:connection.GOwin_style[setting("GOwin")],
+node|z15-17!:connection.Gwin_style[setting("Gowin")],
 node|z15-17!:connection.maning_style[setting("maning")],
 node|z15-17!:connection.Rally_style[setting("Rally")],
 node|z15-17!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -487,9 +467,7 @@ node|z15-17!:connection.razor74_style[setting("razor74")],
 node|z15-17!:connection.JayCBR_style[setting("JayCBR")],
 node|z15-17!:connection.nikospag_style[setting("nikospag")],
 node|z15-17!:connection.beatnickgr_style[setting("beatnickgr")],
-node|z15-17!:connection.raphaelmirc_style[setting("raphaelmirc")],
-node|z15-17!:connection.tarta_style[setting("tarta")],
-node|z15-17!:connection.wazzolini_style[setting("wazzolini")]
+node|z15-17!:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -502,7 +480,7 @@ node|z15-17!:connection.wazzolini_style[setting("wazzolini")]
 
 node|z6-15!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 node|z6-15!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node|z6-15!:connection.GOwin_style[setting("GOwin")],
+node|z6-15!:connection.Gowin_style[setting("Gowin")],
 node|z6-15!:connection.maning_style[setting("maning")],
 node|z6-15!:connection.Rally_style[setting("Rally")],
 node|z6-15!:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -530,9 +508,7 @@ node|z6-15!:connection.razor74_style[setting("razor74")],
 node|z6-15!:connection.JayCBR_style[setting("JayCBR")],
 node|z6-15!:connection.nikospag_style[setting("nikospag")],
 node|z6-15!:connection.beatnickgr_style[setting("beatnickgr")],
-node|z6-15!:connection.raphaelmirc_style[setting("raphaelmirc")],
-node|z6-15!:connection.tarta_style[setting("tarta")],
-node|z6-15!:connection.wazzolini_style[setting("wazzolini")]
+node|z6-15!:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -548,7 +524,7 @@ node|z6-15!:connection.wazzolini_style[setting("wazzolini")]
 
 node|z16-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
 node|z16-34:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node|z16-34:connection.GOwin_style[setting("GOwin")],
+node|z16-34:connection.Gowin_style[setting("Gowin")],
 node|z16-34:connection.maning_style[setting("maning")],
 node|z16-34:connection.Rally_style[setting("Rally")],
 node|z16-34:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -576,9 +552,7 @@ node|z16-34:connection.razor74_style[setting("razor74")],
 node|z16-34:connection.JayCBR_style[setting("JayCBR")],
 node|z16-34:connection.nikospag_style[setting("nikospag")],
 node|z16-34:connection.beatnickgr_style[setting("beatnickgr")],
-node|z16-34:connection.raphaelmirc_style[setting("raphaelmirc")],
-node|z16-34:connection.tarta_style[setting("tarta")],
-node|z16-34:connection.wazzolini_style[setting("wazzolini")]
+node|z16-34:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	
   	symbol-size: 8;
@@ -591,7 +565,7 @@ node|z16-34:connection.wazzolini_style[setting("wazzolini")]
 
 node|z14-16:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
 node|z14-16:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node|z14-16:connection.GOwin_style[setting("GOwin")],
+node|z14-16:connection.Gowin_style[setting("Gowin")],
 node|z14-16:connection.maning_style[setting("maning")],
 node|z14-16:connection.Rally_style[setting("Rally")],
 node|z14-16:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -619,9 +593,7 @@ node|z14-16:connection.razor74_style[setting("razor74")],
 node|z14-16:connection.JayCBR_style[setting("JayCBR")],
 node|z14-16:connection.nikospag_style[setting("nikospag")],
 node|z14-16:connection.beatnickgr_style[setting("beatnickgr")],
-node|z14-16:connection.raphaelmirc_style[setting("raphaelmirc")],
-node|z14-16:connection.tarta_style[setting("tarta")],
-node|z14-16:connection.wazzolini_style[setting("wazzolini")]
+node|z14-16:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -633,7 +605,7 @@ node|z14-16:connection.wazzolini_style[setting("wazzolini")]
 
 node|z8-14:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
 node|z8-14:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-node|z8-14:connection.GOwin_style[setting("GOwin")],
+node|z8-14:connection.Gowin_style[setting("Gowin")],
 node|z8-14:connection.maning_style[setting("maning")],
 node|z8-14:connection.Rally_style[setting("Rally")],
 node|z8-14:connection.TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -661,9 +633,7 @@ node|z8-14:connection.razor74_style[setting("razor74")],
 node|z8-14:connection.JayCBR_style[setting("JayCBR")],
 node|z8-14:connection.nikospag_style[setting("nikospag")],
 node|z8-14:connection.beatnickgr_style[setting("beatnickgr")],
-node|z8-14:connection.raphaelmirc_style[setting("raphaelmirc")],
-node|z8-14:connection.tarta_style[setting("tarta")],
-node|z8-14:connection.wazzolini_style[setting("wazzolini")]
+node|z8-14:connection.raphaelmirc_style[setting("raphaelmirc")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -678,7 +648,7 @@ node|z8-14:connection.wazzolini_style[setting("wazzolini")]
 
 way|z15-34[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 way|z15-34[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-way|z15-34[bridge!=yes].GOwin_style[setting("GOwin")],
+way|z15-34[bridge!=yes].Gowin_style[setting("Gowin")],
 way|z15-34[bridge!=yes].maning_style[setting("maning")],
 way|z15-34[bridge!=yes].Rally_style[setting("Rally")],
 way|z15-34[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -706,9 +676,7 @@ way|z15-34[bridge!=yes].razor74_style[setting("razor74")],
 way|z15-34[bridge!=yes].JayCBR_style[setting("JayCBR")],
 way|z15-34[bridge!=yes].nikospag_style[setting("nikospag")],
 way|z15-34[bridge!=yes].beatnickgr_style[setting("beatnickgr")],
-way|z15-34[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")],
-way|z15-34[bridge!=yes].tarta_style[setting("tarta")],
-way|z15-34[bridge!=yes].wazzolini_style[setting("wazzolini")]
+way|z15-34[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")]
 {
 
 	casing-color: red;
@@ -721,7 +689,7 @@ way|z15-34[bridge!=yes].wazzolini_style[setting("wazzolini")]
 
 way|z8-15[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
 way|z8-15[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
-way|z8-15[bridge!=yes].GOwin_style[setting("GOwin")],
+way|z8-15[bridge!=yes].Gowin_style[setting("Gowin")],
 way|z8-15[bridge!=yes].maning_style[setting("maning")],
 way|z8-15[bridge!=yes].Rally_style[setting("Rally")],
 way|z8-15[bridge!=yes].TagaSanPedroAko_style[setting("TagaSanPedroAko")],
@@ -749,9 +717,7 @@ way|z8-15[bridge!=yes].razor74_style[setting("razor74")],
 way|z8-15[bridge!=yes].JayCBR_style[setting("JayCBR")],
 way|z8-15[bridge!=yes].nikospag_style[setting("nikospag")],
 way|z8-15[bridge!=yes].beatnickgr_style[setting("beatnickgr")],
-way|z8-15[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")],
-way|z8-15[bridge!=yes].tarta_style[setting("tarta")],
-way|z8-15[bridge!=yes].wazzolini_style[setting("wazzolini")]
+way|z8-15[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
