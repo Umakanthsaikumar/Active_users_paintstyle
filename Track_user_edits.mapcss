@@ -5,8 +5,6 @@ meta {
 }
 
 
-
-
 /* -- Countries List------- */
 
 settings::Brazil {
@@ -29,7 +27,26 @@ settings::Europe {
 	label: tr("5. Europe")
 }
 
+settings::Zimbabwe {
+	label: tr("6. Zimbabwe")
+}
+
 /* -- User setting List------- */
+
+setting::gabrielalves{
+	type: boolean;
+	label: tr("gabrielalves");
+	default: true;
+	group: "Brazil";
+}
+
+setting::portalaventura{
+	type: boolean;
+	label: tr("portalaventura");
+	default: true;
+	group: "Brazil";
+}
+
 
 setting::erickdeoliveiraleal{
 	type: boolean;
@@ -277,6 +294,14 @@ node:modified::modified_layer
     z-index: 5;
 }
 
+*[eval(JOSM_search("user:gabrielalves"))] {
+  	set .gabrielalves_style;
+}
+
+*[eval(JOSM_search("user:portalaventura"))] {
+  	set .portalaventura_style;
+}
+
 *[eval(JOSM_search("user:erickdeoliveiraleal"))] {
   	set .erickdeoliveiraleal_style;
 }
@@ -413,6 +438,8 @@ node:modified::modified_layer
 /* -- User edits on node node styling------- */
 
 node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z17-34!:connection.portalaventura_style[setting("portalaventura")],
+node|z17-34!:connection.gabrielalves_style[setting("gabrielalves")],
 node|z16-34!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z16-34!:connection.GOwin_style[setting("GOwin")],
 node|z16-34!:connection.maning_style[setting("maning")],
@@ -458,6 +485,8 @@ node|z17-34!:connection.wazzolini_style[setting("wazzolini")]
 
 
 node|z15-17!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z15-17!:connection.portalaventura_style[setting("portalaventura")],
+node|z15-17!:connection.gabrielalves_style[setting("gabrielalves")],
 node|z15-17!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z15-17!:connection.GOwin_style[setting("GOwin")],
 node|z15-17!:connection.maning_style[setting("maning")],
@@ -501,6 +530,8 @@ node|z15-17!:connection.wazzolini_style[setting("wazzolini")]
 }
 
 node|z6-15!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z6-15!:connection.portalaventura_style[setting("portalaventura")],
+node|z6-15!:connection.gabrielalves_style[setting("gabrielalves")],
 node|z6-15!:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z6-15!:connection.GOwin_style[setting("GOwin")],
 node|z6-15!:connection.maning_style[setting("maning")],
@@ -547,6 +578,8 @@ node|z6-15!:connection.wazzolini_style[setting("wazzolini")]
 /* -- User edits on junction node styling ------- */
 
 node|z16-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z16-34:connection.portalaventura_style[setting("portalaventura")]
+node|z16-34:connection.gabrielalves_style[setting("gabrielalves")]
 node|z16-34:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z16-34:connection.GOwin_style[setting("GOwin")],
 node|z16-34:connection.maning_style[setting("maning")],
@@ -590,6 +623,8 @@ node|z16-34:connection.wazzolini_style[setting("wazzolini")]
 }
 
 node|z14-16:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z14-16:connection.portalaventura_style[setting("portalaventura")]
+node|z14-16:connection.gabrielalves_style[setting("gabrielalves")]
 node|z14-16:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z14-16:connection.GOwin_style[setting("GOwin")],
 node|z14-16:connection.maning_style[setting("maning")],
@@ -632,6 +667,8 @@ node|z14-16:connection.wazzolini_style[setting("wazzolini")]
 }
 
 node|z8-14:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
+node|z8-14:connection.portalaventura_style[setting("portalaventura")]
+node|z8-14:connection.gabrielalves_style[setting("gabrielalves")]
 node|z8-14:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z8-14:connection.GOwin_style[setting("GOwin")],
 node|z8-14:connection.maning_style[setting("maning")],
@@ -677,6 +714,8 @@ node|z8-14:connection.wazzolini_style[setting("wazzolini")]
 /* -- User edits on way styling ------- */
 
 way|z15-34[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+way|z15-34[bridge!=yes].portalaventura_style[setting("portalaventura")],
+way|z15-34[bridge!=yes].gabrielalves_style[setting("gabrielalves")],
 way|z15-34[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 way|z15-34[bridge!=yes].GOwin_style[setting("GOwin")],
 way|z15-34[bridge!=yes].maning_style[setting("maning")],
@@ -720,6 +759,8 @@ way|z15-34[bridge!=yes].wazzolini_style[setting("wazzolini")]
 
 
 way|z8-15[bridge!=yes].erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+way|z8-15[bridge!=yes].portalaventura_style[setting("portalaventura")],
+way|z8-15[bridge!=yes].gabrielalves_style[setting("gabrielalves")],
 way|z8-15[bridge!=yes].Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 way|z8-15[bridge!=yes].GOwin_style[setting("GOwin")],
 way|z8-15[bridge!=yes].maning_style[setting("maning")],
