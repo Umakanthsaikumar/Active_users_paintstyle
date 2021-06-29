@@ -577,9 +577,9 @@ node|z6-15!:connection.wazzolini_style[setting("wazzolini")]
 
 /* -- User edits on junction node styling ------- */
 
-node|z16-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
-node|z16-34:connection.portalaventura_style[setting("portalaventura")]
-node|z16-34:connection.gabrielalves_style[setting("gabrielalves")]
+node|z16-34:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z16-34:connection.portalaventura_style[setting("portalaventura")],
+node|z16-34:connection.gabrielalves_style[setting("gabrielalves")],
 node|z16-34:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z16-34:connection.GOwin_style[setting("GOwin")],
 node|z16-34:connection.maning_style[setting("maning")],
@@ -622,9 +622,9 @@ node|z16-34:connection.wazzolini_style[setting("wazzolini")]
   	z-index: 5; 
 }
 
-node|z14-16:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
-node|z14-16:connection.portalaventura_style[setting("portalaventura")]
-node|z14-16:connection.gabrielalves_style[setting("gabrielalves")]
+node|z14-16:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z14-16:connection.portalaventura_style[setting("portalaventura")],
+node|z14-16:connection.gabrielalves_style[setting("gabrielalves")],
 node|z14-16:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z14-16:connection.GOwin_style[setting("GOwin")],
 node|z14-16:connection.maning_style[setting("maning")],
@@ -666,9 +666,9 @@ node|z14-16:connection.wazzolini_style[setting("wazzolini")]
   	z-index: 5;
 }
 
-node|z8-14:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")]
-node|z8-14:connection.portalaventura_style[setting("portalaventura")]
-node|z8-14:connection.gabrielalves_style[setting("gabrielalves")]
+node|z8-14:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
+node|z8-14:connection.portalaventura_style[setting("portalaventura")],
+node|z8-14:connection.gabrielalves_style[setting("gabrielalves")],
 node|z8-14:connection.Timmy_Tesseract_style[setting("Timmy_Tesseract")],
 node|z8-14:connection.GOwin_style[setting("GOwin")],
 node|z8-14:connection.maning_style[setting("maning")],
