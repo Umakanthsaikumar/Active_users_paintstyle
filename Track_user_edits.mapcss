@@ -27,12 +27,8 @@ settings::Europe {
 	label: tr("5. Europe")
 }
 
-settings::Zimbabwe {
-	label: tr("6. Zimbabwe")
-}
-
 settings::png {
-	label: tr("7. Papua New Guinea")
+	label: tr("6. Papua New Guinea")
 }
 
 /* -- User setting List------- */
