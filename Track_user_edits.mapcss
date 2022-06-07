@@ -31,6 +31,10 @@ settings::png {
 	label: tr("6. Papua New Guinea")
 }
 
+settings::col {
+	label: tr("7. Colombia")
+}
+
 /* -- User setting List------- */
 
 setting::gabrielalves{
@@ -297,6 +301,13 @@ setting::topius{
 	group: "png";
 }
 
+setting::afgb1977{
+	type: boolean;
+	label: tr("afgb1977");
+	default: true;
+	group: "col";
+}
+
 
 node:modified::modified_layer 
 {
@@ -456,6 +467,10 @@ node:modified::modified_layer
   	set .topius_style;
 }
 
+*[eval(JOSM_search("user:afgb1977"))] {
+  	set .afgb1977_style;
+}
+
 
 /* -- User edits on node node styling------- */
 
@@ -495,7 +510,8 @@ node|z17-34!:connection.raphaelmirc_style[setting("raphaelmirc")],
 node|z17-34!:connection.tarta_style[setting("tarta")],
 node|z17-34!:connection.wazzolini_style[setting("wazzolini")],
 node|z17-34!:connection.adrianojbr_style[setting("adrianojbr")],
-node|z17-34!:connection.topius_style[setting("topius")]
+node|z17-34!:connection.topius_style[setting("topius")],
+node|z17-34!:connection.afgb1977_style[setting("afgb1977")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -544,8 +560,8 @@ node|z15-17!:connection.raphaelmirc_style[setting("raphaelmirc")],
 node|z15-17!:connection.tarta_style[setting("tarta")],
 node|z15-17!:connection.wazzolini_style[setting("wazzolini")],
 node|z15-17!:connection.adrianojbr_style[setting("adrianojbr")],
-node|z15-17!:connection.topius_style[setting("topius")]
-
+node|z15-17!:connection.topius_style[setting("topius")],
+node|z15-17!:connection.afgb1977_style[setting("afgb1977")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -592,8 +608,8 @@ node|z6-15!:connection.raphaelmirc_style[setting("raphaelmirc")],
 node|z6-15!:connection.tarta_style[setting("tarta")],
 node|z6-15!:connection.wazzolini_style[setting("wazzolini")],
 node|z6-15!:connection.adrianojbr_style[setting("adrianojbr")],
-node|z6-15!:connection.topius_style[setting("topius")]
-
+node|z6-15!:connection.topius_style[setting("topius")],
+node|z6-15!:connection.afgb1977_style[setting("afgb1977")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -643,8 +659,8 @@ node|z16-34:connection.raphaelmirc_style[setting("raphaelmirc")],
 node|z16-34:connection.tarta_style[setting("tarta")],
 node|z16-34:connection.wazzolini_style[setting("wazzolini")],
 node|z16-34:connection.adrianojbr_style[setting("adrianojbr")],
-node|z16-34:connection.topius_style[setting("topius")]
-
+node|z16-34:connection.topius_style[setting("topius")],
+node|z16-34:connection.afgb1977_style[setting("afgb1977")]
 {
   	
   	symbol-size: 8;
@@ -691,7 +707,8 @@ node|z14-16:connection.raphaelmirc_style[setting("raphaelmirc")],
 node|z14-16:connection.tarta_style[setting("tarta")],
 node|z14-16:connection.wazzolini_style[setting("wazzolini")],
 node|z14-16:connection.adrianojbr_style[setting("adrianojbr")],
-node|z14-16:connection.topius_style[setting("topius")]
+node|z14-16:connection.topius_style[setting("topius")],
+node|z14-16:connection.afgb1977_style[setting("afgb1977")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -737,7 +754,8 @@ node|z8-14:connection.raphaelmirc_style[setting("raphaelmirc")],
 node|z8-14:connection.tarta_style[setting("tarta")],
 node|z8-14:connection.wazzolini_style[setting("wazzolini")],
 node|z8-14:connection.adrianojbr_style[setting("adrianojbr")],
-node|z8-14:connection.topius_style[setting("topius")]
+node|z8-14:connection.topius_style[setting("topius")],
+node|z8-14:connection.afgb1977_style[setting("afgb1977")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -786,8 +804,8 @@ way|z15-34[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")],
 way|z15-34[bridge!=yes].tarta_style[setting("tarta")],
 way|z15-34[bridge!=yes].wazzolini_style[setting("wazzolini")],
 way|z15-34[bridge!=yes].adrianojbr_style[setting("adrianojbr")],
-way|z15-34[bridge!=yes].topius_style[setting("topius")]
-
+way|z15-34[bridge!=yes].topius_style[setting("topius")],
+way|z15-34[bridge!=yes].afgb1977_style[setting("afgb1977")]
 {
 
 	casing-color: red;
@@ -834,11 +852,10 @@ way|z8-15[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")],
 way|z8-15[bridge!=yes].tarta_style[setting("tarta")],
 way|z8-15[bridge!=yes].wazzolini_style[setting("wazzolini")],
 way|z8-15[bridge!=yes].adrianojbr_style[setting("adrianojbr")],
-way|z8-15[bridge!=yes].topius_style[setting("topius")]
+way|z8-15[bridge!=yes].afgb1977_style[setting("afgb1977")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
   	casing-width:1.5;
   	casing-linecap:2;
-
 }
