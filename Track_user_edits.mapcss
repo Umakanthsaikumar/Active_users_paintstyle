@@ -144,6 +144,49 @@ setting::adrianojbr{
 	group: "Brazil";
 }
 
+setting::danctc{
+	type: boolean;
+	label: tr("danctc");
+	default: true;
+	group: "Brazil";
+}
+
+
+setting::RadMapper{
+	type: boolean;
+	label: tr("RadMapper");
+	default: true;
+	group: "Brazil";
+}
+
+setting::stanbov94{
+	type: boolean;
+	label: tr("stanbov94");
+	default: true;
+	group: "Brazil";
+}
+
+setting::Revolta Gardy{
+	type: boolean;
+	label: tr("Revolta Gardy");
+	default: true;
+	group: "Brazil";
+}
+
+setting::Revolta Gardy{
+	type: boolean;
+	label: tr("Revolta Gardy");
+	default: true;
+	group: "Brazil";
+}
+
+setting::PlayzinhoAgro{
+	type: boolean;
+	label: tr("PlayzinhoAgro");
+	default: true;
+	group: "Brazil";
+}
+
 setting::GOwin{
 	type: boolean;
 	label: tr("GOwin");
@@ -472,6 +515,26 @@ node:modified::modified_layer
 }
 
 
+*[eval(JOSM_search("user:danctc"))] {
+  	set .danctc_style;
+}
+
+*[eval(JOSM_search("user:RadMapper"))] {
+  	set .RadMapper_style;
+}
+
+*[eval(JOSM_search("user:stanbov94"))] {
+  	set .stanbov94_style;
+}
+
+*[eval(JOSM_search("user:Revolta Gardy"))] {
+  	set .Revolta Gardy_style;
+}
+
+*[eval(JOSM_search("user:PlayzinhoAgro"))] {
+  	set .PlayzinhoAgro_style;
+}
+
 /* -- User edits on node node styling------- */
 
 node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
@@ -511,7 +574,12 @@ node|z17-34!:connection.tarta_style[setting("tarta")],
 node|z17-34!:connection.wazzolini_style[setting("wazzolini")],
 node|z17-34!:connection.adrianojbr_style[setting("adrianojbr")],
 node|z17-34!:connection.topius_style[setting("topius")],
-node|z17-34!:connection.afgb1977_style[setting("afgb1977")]
+node|z17-34!:connection.afgb1977_style[setting("afgb1977")],
+node|z17-34!:connection.danctc_style[setting("danctc")],
+node|z17-34!:connection.RadMapper_style[setting("RadMapper")],
+node|z17-34!:connection.stanbov94_style[setting("stanbov94")],
+node|z17-34!:connection.Revolta Gardy_style[setting("Revolta Gardy")],
+node|z17-34!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -561,7 +629,12 @@ node|z15-17!:connection.tarta_style[setting("tarta")],
 node|z15-17!:connection.wazzolini_style[setting("wazzolini")],
 node|z15-17!:connection.adrianojbr_style[setting("adrianojbr")],
 node|z15-17!:connection.topius_style[setting("topius")],
-node|z15-17!:connection.afgb1977_style[setting("afgb1977")]
+node|z15-17!:connection.afgb1977_style[setting("afgb1977")],
+node|z15-17!:connection.danctc_style[setting("danctc")],
+node|z15-17!:connection.RadMapper_style[setting("RadMapper")],
+node|z15-17!:connection.stanbov94_style[setting("stanbov94")],
+node|z15-17!:connection.Revolta Gardy_style[setting("Revolta Gardy")],
+node|z15-17!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -609,7 +682,12 @@ node|z6-15!:connection.tarta_style[setting("tarta")],
 node|z6-15!:connection.wazzolini_style[setting("wazzolini")],
 node|z6-15!:connection.adrianojbr_style[setting("adrianojbr")],
 node|z6-15!:connection.topius_style[setting("topius")],
-node|z6-15!:connection.afgb1977_style[setting("afgb1977")]
+node|z6-15!:connection.afgb1977_style[setting("afgb1977")],
+node|z6-15!:connection.danctc_style[setting("danctc")],
+node|z6-15!:connection.RadMapper_style[setting("RadMapper")],
+node|z6-15!:connection.stanbov94_style[setting("stanbov94")],
+node|z6-15!:connection.Revolta Gardy_style[setting("Revolta Gardy")],
+node|z6-15!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -660,7 +738,12 @@ node|z16-34:connection.tarta_style[setting("tarta")],
 node|z16-34:connection.wazzolini_style[setting("wazzolini")],
 node|z16-34:connection.adrianojbr_style[setting("adrianojbr")],
 node|z16-34:connection.topius_style[setting("topius")],
-node|z16-34:connection.afgb1977_style[setting("afgb1977")]
+node|z16-34:connection.afgb1977_style[setting("afgb1977")],
+node|z16-34:connection.danctc_style[setting("danctc")],
+node|z16-34:connection.RadMapper_style[setting("RadMapper")],
+node|z16-34:connection.stanbov94_style[setting("stanbov94")],
+node|z16-34:connection.Revolta Gard_style[setting("Revolta Gard")],
+node|z16-34:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
   	
   	symbol-size: 8;
@@ -708,7 +791,11 @@ node|z14-16:connection.tarta_style[setting("tarta")],
 node|z14-16:connection.wazzolini_style[setting("wazzolini")],
 node|z14-16:connection.adrianojbr_style[setting("adrianojbr")],
 node|z14-16:connection.topius_style[setting("topius")],
-node|z14-16:connection.afgb1977_style[setting("afgb1977")]
+node|z14-16:connection.danctc_style[setting("danctc")],
+node|z14-16:connection.RadMapper_style[setting("RadMapper")],
+node|z14-16:connection.stanbov94_style[setting("stanbov94")],
+node|z14-16:connection.Revolta Gardy_style[setting("Revolta Gardy")],
+node|z14-16:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -755,7 +842,12 @@ node|z8-14:connection.tarta_style[setting("tarta")],
 node|z8-14:connection.wazzolini_style[setting("wazzolini")],
 node|z8-14:connection.adrianojbr_style[setting("adrianojbr")],
 node|z8-14:connection.topius_style[setting("topius")],
-node|z8-14:connection.afgb1977_style[setting("afgb1977")]
+node|z8-14:connection.afgb1977_style[setting("afgb1977")],
+node|z8-14:connection.danctc_style[setting("danctc")],
+node|z8-14:connection.RadMapper_style[setting("RadMapper")],
+node|z8-14:connection.stanbov94_style[setting("stanbov94")],
+node|z8-14:connection.Revolta Gardy_style[setting("Revolta Gardy")],
+node|z8-14:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -805,7 +897,12 @@ way|z15-34[bridge!=yes].tarta_style[setting("tarta")],
 way|z15-34[bridge!=yes].wazzolini_style[setting("wazzolini")],
 way|z15-34[bridge!=yes].adrianojbr_style[setting("adrianojbr")],
 way|z15-34[bridge!=yes].topius_style[setting("topius")],
-way|z15-34[bridge!=yes].afgb1977_style[setting("afgb1977")]
+way|z15-34[bridge!=yes].afgb1977_style[setting("afgb1977")],
+way|z15-34[bridge!=yes].danctc_style[setting("danctc")],
+way|z15-34[bridge!=yes].RadMapper_style[setting("RadMapper")],
+way|z15-34[bridge!=yes].stanbov94_style[setting("stanbov94")],
+way|z15-34[bridge!=yes].Revolta Gardy_style[setting("Revolta Gardy")],
+way|z15-34[bridge!=yes].PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
 
 	casing-color: red;
@@ -852,7 +949,12 @@ way|z8-15[bridge!=yes].raphaelmirc_style[setting("raphaelmirc")],
 way|z8-15[bridge!=yes].tarta_style[setting("tarta")],
 way|z8-15[bridge!=yes].wazzolini_style[setting("wazzolini")],
 way|z8-15[bridge!=yes].adrianojbr_style[setting("adrianojbr")],
-way|z8-15[bridge!=yes].afgb1977_style[setting("afgb1977")]
+way|z8-15[bridge!=yes].afgb1977_style[setting("afgb1977")],
+way|z8-15[bridge!=yes].danctc_style[setting("danctc")],
+way|z8-15[bridge!=yes].RadMapper_style[setting("RadMapper")],
+way|z8-15[bridge!=yes].stanbov94_style[setting("stanbov94")],
+way|z8-15[bridge!=yes].Revolta Gardy_style[setting("Revolta Gardy")],
+way|z8-15[bridge!=yes].PlayzinhoAgro_style[setting("PlayzinhoAgro")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
