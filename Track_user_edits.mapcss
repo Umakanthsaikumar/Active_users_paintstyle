@@ -166,13 +166,6 @@ setting::stanbov94{
 	group: "Brazil";
 }
 
-setting::Revolta Gardy{
-	type: boolean;
-	label: tr("Revolta Gardy");
-	default: true;
-	group: "Brazil";
-}
-
 setting::PlayzinhoAgro{
 	type: boolean;
 	label: tr("PlayzinhoAgro");
