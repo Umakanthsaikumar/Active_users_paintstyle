@@ -187,6 +187,13 @@ setting::PlayzinhoAgro{
 	group: "Brazil";
 }
 
+setting::patodiez{
+	type: boolean;
+	label: tr("patodiez");
+	default: true;
+	group: "Brazil";
+}
+
 setting::GOwin{
 	type: boolean;
 	label: tr("GOwin");
@@ -535,6 +542,10 @@ node:modified::modified_layer
   	set .PlayzinhoAgro_style;
 }
 
+*[eval(JOSM_search("user:patodiez"))] {
+  	set .patodiez_style;
+}
+
 /* -- User edits on node node styling------- */
 
 node|z17-34!:connection.erickdeoliveiraleal_style[setting("erickdeoliveiraleal")],
@@ -579,7 +590,8 @@ node|z17-34!:connection.danctc_style[setting("danctc")],
 node|z17-34!:connection.RadMapper_style[setting("RadMapper")],
 node|z17-34!:connection.stanbov94_style[setting("stanbov94")],
 node|z17-34!:connection.Revolta Gardy_style[setting("Revolta Gardy")],
-node|z17-34!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+node|z17-34!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+node|z17-34!:connection.patodiez_style[setting("patodiez")]
 {
   	symbol-size: 7;
   	symbol-shape: square;	
@@ -634,7 +646,8 @@ node|z15-17!:connection.danctc_style[setting("danctc")],
 node|z15-17!:connection.RadMapper_style[setting("RadMapper")],
 node|z15-17!:connection.stanbov94_style[setting("stanbov94")],
 node|z15-17!:connection.Revolta Gardy_style[setting("Revolta Gardy")],
-node|z15-17!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+node|z15-17!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+node|z15-17!:connection.patodiez_style[setting("patodiez")]
 {
   	symbol-size: 4;
   	symbol-shape: square;	
@@ -687,7 +700,8 @@ node|z6-15!:connection.danctc_style[setting("danctc")],
 node|z6-15!:connection.RadMapper_style[setting("RadMapper")],
 node|z6-15!:connection.stanbov94_style[setting("stanbov94")],
 node|z6-15!:connection.Revolta Gardy_style[setting("Revolta Gardy")],
-node|z6-15!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+node|z6-15!:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+node|z6-15!:connection.patodiez_style[setting("patodiez")]
 {
   	symbol-size: 0.1;
   	symbol-shape: square;	
@@ -743,7 +757,8 @@ node|z16-34:connection.danctc_style[setting("danctc")],
 node|z16-34:connection.RadMapper_style[setting("RadMapper")],
 node|z16-34:connection.stanbov94_style[setting("stanbov94")],
 node|z16-34:connection.Revolta Gard_style[setting("Revolta Gard")],
-node|z16-34:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+node|z16-34:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+node|z16-34:connection.patodiez_style[setting("patodiez")]
 {
   	
   	symbol-size: 8;
@@ -795,7 +810,8 @@ node|z14-16:connection.danctc_style[setting("danctc")],
 node|z14-16:connection.RadMapper_style[setting("RadMapper")],
 node|z14-16:connection.stanbov94_style[setting("stanbov94")],
 node|z14-16:connection.Revolta Gardy_style[setting("Revolta Gardy")],
-node|z14-16:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+node|z14-16:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+node|z14-16:connection.patodiez_style[setting("patodiez")]
 {
   	symbol-size: 6;
   	symbol-shape: circle;	
@@ -847,7 +863,8 @@ node|z8-14:connection.danctc_style[setting("danctc")],
 node|z8-14:connection.RadMapper_style[setting("RadMapper")],
 node|z8-14:connection.stanbov94_style[setting("stanbov94")],
 node|z8-14:connection.Revolta Gardy_style[setting("Revolta Gardy")],
-node|z8-14:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+node|z8-14:connection.PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+node|z8-14:connection.patodiez_style[setting("patodiez")]
 {
   	symbol-size: 0.1;
   	symbol-shape: circle;	
@@ -902,7 +919,8 @@ way|z15-34[bridge!=yes].danctc_style[setting("danctc")],
 way|z15-34[bridge!=yes].RadMapper_style[setting("RadMapper")],
 way|z15-34[bridge!=yes].stanbov94_style[setting("stanbov94")],
 way|z15-34[bridge!=yes].Revolta Gardy_style[setting("Revolta Gardy")],
-way|z15-34[bridge!=yes].PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+way|z15-34[bridge!=yes].PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+way|z15-34[bridge!=yes].patodiez_style[setting("patodiez")]
 {
 
 	casing-color: red;
@@ -954,7 +972,8 @@ way|z8-15[bridge!=yes].danctc_style[setting("danctc")],
 way|z8-15[bridge!=yes].RadMapper_style[setting("RadMapper")],
 way|z8-15[bridge!=yes].stanbov94_style[setting("stanbov94")],
 way|z8-15[bridge!=yes].Revolta Gardy_style[setting("Revolta Gardy")],
-way|z8-15[bridge!=yes].PlayzinhoAgro_style[setting("PlayzinhoAgro")]
+way|z8-15[bridge!=yes].PlayzinhoAgro_style[setting("PlayzinhoAgro")],
+way|z8-15[bridge!=yes].patodiez_style[setting("patodiez")]
 {
 	casing-color: red;
   	casing-opacity:0.5;
